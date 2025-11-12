@@ -1,0 +1,17 @@
+{
+  "type":"object",
+  "properties":{
+    "id":{"type":"string"},
+    "name":{"type":"string"},
+    "dob":{"type":"string","format":"date"},
+    "sex":{"type":"string"},
+    "height_cm":{"type":"number"},
+    "weight_kg":{"type":"number"},
+    "activity_level":{"type":"string"},
+    "diet_pref":{"type":"string"},
+    "health_goals":{"type":"array","items":{"type":"string"}},
+    "dosha_result":{"type":"string"},
+    "preferences":{"type":"array","items":{"type":"string"}}
+  },
+  "required":["id","height_cm","weight_kg","activity_level"]
+}

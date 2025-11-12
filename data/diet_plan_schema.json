@@ -1,0 +1,18 @@
+{
+  "type":"object",
+  "properties":{
+    "id":{"type":"string"},
+    "user_id":{"type":"string"},
+    "date_generated":{"type":"string","format":"date"},
+    "plan_type":{"type":"string"},
+    "total_calories":{"type":"number"},
+    "meals":{"type":"array","items":{
+      "type":"object",
+      "properties":{
+        "meal_type":{"type":"string"},
+        "items":{"type":"array","items":{"type":"object"}}
+      }
+    }},
+    "macros":{"type":"object"}
+  }
+}

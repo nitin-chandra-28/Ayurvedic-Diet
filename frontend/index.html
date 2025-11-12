@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" name="viewport"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+<meta name="theme-color" content="#556B2F"/>
+<title>AyurBalance - Personalized Ayurvedic Diet Plan</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#556B2F",
+                        "secondary": "#DAA520",
+                        "background-light": "#F5F5DC",
+                        "background-dark": "#1d2113",
+                        "text-light": "#414833",
+                        "text-dark": "#e0e2d8",
+                        "card-light": "#ffffff",
+                        "card-dark": "#2a2f1c",
+                        "border-light": "#dbe6df",
+                        "border-dark": "#3c4427",
+                        "ayur": {
+                            "green": "#6B8E23",
+                            "beige": "#F6F4EC",
+                            "brown": "#A67C52",
+                            "darkGreen": "#556B2F",
+                            "lightBeige": "#FAF9F5",
+                            "earth": "#8B7355",
+                        },
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"],
+                        "sans": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark transition-colors duration-300">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Decorative background elements -->
+<div class="fixed inset-0 pointer-events-none opacity-30">
+<div class="absolute top-20 left-10 w-64 h-64 bg-accent rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float"></div>
+<div class="absolute top-40 right-10 w-96 h-96 bg-primary rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" style="animation-delay: 1s;"></div>
+<div class="absolute bottom-20 left-1/2 w-80 h-80 bg-secondary rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" style="animation-delay: 2s;"></div>
+</div>
+
+<div class="layout-container flex h-full grow flex-col relative z-10">
+<div class="px-4 md:px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col w-full max-w-[1200px] flex-1">
+<header class="glass-effect sticky top-0 z-50 flex items-center justify-between whitespace-nowrap px-6 md:px-10 py-4 rounded-2xl shadow-soft mb-4">
+<div class="flex items-center gap-4 text-text-light dark:text-text-dark">
+<div class="size-8 text-primary relative">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="animate-pulse-soft">
+<path d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-[-0.015em] gradient-text">AyurBalance</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-6 md:gap-9">
+<button id="headerLearnAyurveda" class="text-sm font-semibold leading-normal hover:text-primary dark:hover:text-accent transition-colors duration-200 relative group cursor-pointer bg-transparent border-0">
+Learn Ayurveda
+<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
+</button>
+<button id="darkModeToggle" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300 cursor-pointer bg-transparent border-0" title="Toggle Dark Mode">
+<span class="material-symbols-outlined dark-mode-icon text-xl">
+light_mode
+</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex flex-col flex-1 animate-fade-in">
+<section class="w-full py-16 md:py-24">
+<div class="@container">
+<div class="p-4">
+<div class="relative flex min-h-[520px] flex-col gap-8 rounded-2xl bg-cover bg-center bg-no-repeat items-center justify-center p-8 md:p-12 overflow-hidden shadow-glow" data-alt="A serene background with balanced stones and green leaves, symbolizing Ayurvedic principles" style='background-image: linear-gradient(135deg, rgba(85, 107, 47, 0.92) 0%, rgba(143, 188, 143, 0.85) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBBkBkXF58IAV6cdcKCqm8fVCQLMpW9POm6G1YG1TazWipWfp2B8Dg_HTGrKe90inuY1nZBKGZ11DjumLfO9ioFvuMLJ-wNLGCfSsscAW4agPPjP5y5Hxv_ESCJ2tDcUX64QgxiBuvInnUCUYfKxyz-YTyT5iwO4CIc2YyXd-SShycrX0xdLQvbzbL3RK0kRu15osHxE1Px01cHkFbTqj1fH_FIkoHc_OElwArvBXf85kIBj46W-VCBVGtO-Ix4Cc8vOL78nWmvgGQP"); background-blend-mode: overlay;'>
+<div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 animate-shimmer"></div>
+<div class="flex flex-col gap-6 text-center max-w-3xl relative z-10 animate-slide-up">
+<div class="inline-flex items-center justify-center mb-2">
+<span class="px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white text-sm font-semibold tracking-wide">✨ Ancient Wisdom, Modern Science</span>
+</div>
+<h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-[-0.033em] drop-shadow-lg">
+Get Your Personalized<br/>Ayurvedic Diet Plan
+</h1>
+<h2 class="text-white/95 text-lg md:text-xl font-medium leading-relaxed drop-shadow-md max-w-2xl mx-auto">
+Balance your mind, body, and spirit with a diet tailored to your unique dosha constitution
+</h2>
+<div class="flex gap-4 justify-center mt-4 flex-wrap">
+<a href="#features" class="flex items-center justify-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm text-white border-2 border-white/30 rounded-xl font-bold hover:bg-white/20 transition-all duration-300">
+<span>Explore Features</span>
+<span class="material-symbols-outlined">arrow_downward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- How It Works Section - Timeline Design -->
+<section class="relative px-4 py-20 bg-gradient-to-b from-primary/5 via-secondary/5 to-transparent overflow-hidden">
+  <!-- Decorative background elements -->
+  <div class="absolute top-10 left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-10 right-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl"></div>
+  
+  <div class="max-w-6xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur-sm border border-primary/20 text-primary font-semibold text-sm mb-4 shadow-sm">
+        <span class="material-symbols-outlined" style="font-size: 20px;">auto_awesome</span>
+        <span>Simple & Effective</span>
+      </div>
+      <h2 class="text-4xl md:text-5xl font-bold text-text-light dark:text-text-dark mb-4">
+        How It Works
+      </h2>
+      <p class="text-lg text-text-light/70 dark:text-text-dark/70 max-w-2xl mx-auto">
+        Your journey to balanced wellness in three transformative steps
+      </p>
+    </div>
+
+    <!-- Timeline Steps -->
+    <div class="relative">
+      <!-- Vertical connecting line (hidden on mobile) -->
+      <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-secondary to-primary transform -translate-x-1/2"></div>
+      
+      <!-- Step 1 -->
+      <div class="relative mb-16 md:mb-24">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <!-- Left Content (visible on desktop) -->
+          <div class="hidden md:flex flex-1 justify-end">
+            <div class="max-w-md text-right pr-8">
+              <div class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold mb-3">STEP 1</div>
+              <h3 class="text-2xl font-bold text-text-light dark:text-text-dark mb-3">Take the Prakriti Quiz</h3>
+              <p class="text-text-light/70 dark:text-text-dark/70 leading-relaxed">
+                Answer carefully curated questions about your physical, mental, and emotional characteristics to discover your unique dosha constitution.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Center Icon -->
+          <button id="howItWorksStep1" class="relative z-10 flex-shrink-0 bg-transparent border-0 cursor-pointer group">
+            <div class="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform duration-300">
+              <span class="material-symbols-outlined text-white" style="font-size: 48px;">quiz</span>
+            </div>
+            <div class="absolute -top-2 -right-2 w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center text-xs font-bold shadow-lg animate-pulse">
+              1
+            </div>
+          </button>
+          
+          <!-- Right Content (visible on desktop) -->
+          <div class="flex-1 md:hidden">
+            <div class="max-w-md text-center">
+              <div class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold mb-3">STEP 1</div>
+              <h3 class="text-2xl font-bold text-text-light dark:text-text-dark mb-3">Take the Prakriti Quiz</h3>
+              <p class="text-text-light/70 dark:text-text-dark/70 leading-relaxed">
+                Answer carefully curated questions about your physical, mental, and emotional characteristics to discover your unique dosha constitution.
+              </p>
+            </div>
+          </div>
+          <div class="hidden md:block flex-1"></div>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="relative mb-16 md:mb-24">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <!-- Left Spacer (desktop) -->
+          <div class="hidden md:block flex-1"></div>
+          
+          <!-- Center Icon -->
+          <button id="howItWorksStep2" class="relative z-10 flex-shrink-0 bg-transparent border-0 cursor-pointer group">
+            <div class="w-24 h-24 rounded-full bg-gradient-to-br from-secondary to-primary flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform duration-300">
+              <span class="material-symbols-outlined text-white" style="font-size: 48px;">restaurant_menu</span>
+            </div>
+            <div class="absolute -top-2 -right-2 w-8 h-8 bg-green-400 rounded-full flex items-center justify-center text-xs font-bold shadow-lg animate-pulse" style="animation-delay: 0.2s;">
+              2
+            </div>
+          </button>
+          
+          <!-- Right Content -->
+          <div class="flex-1">
+            <div class="max-w-md md:pl-8 text-center md:text-left">
+              <div class="inline-block px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-bold mb-3">STEP 2</div>
+              <h3 class="text-2xl font-bold text-text-light dark:text-text-dark mb-3">Get Your Personalized Plan</h3>
+              <p class="text-text-light/70 dark:text-text-dark/70 leading-relaxed">
+                Receive a customized Ayurvedic diet plan with meal recommendations, portion guidance, and foods perfectly balanced for your dosha type and health goals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="relative">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <!-- Left Content (visible on desktop) -->
+          <div class="hidden md:flex flex-1 justify-end">
+            <div class="max-w-md text-right pr-8">
+              <div class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold mb-3">STEP 3</div>
+              <h3 class="text-2xl font-bold text-text-light dark:text-text-dark mb-3">Transform Your Wellness</h3>
+              <p class="text-text-light/70 dark:text-text-dark/70 leading-relaxed">
+                Follow your personalized plan, track your progress, and experience increased energy, better digestion, and holistic well-being through ancient Ayurvedic wisdom.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Center Icon -->
+          <button id="howItWorksStep3" class="relative z-10 flex-shrink-0 bg-transparent border-0 cursor-pointer group">
+            <div class="w-24 h-24 rounded-full bg-gradient-to-br from-primary via-purple-500 to-secondary flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform duration-300">
+              <span class="material-symbols-outlined text-white" style="font-size: 48px;">self_improvement</span>
+            </div>
+            <div class="absolute -top-2 -right-2 w-8 h-8 bg-blue-400 rounded-full flex items-center justify-center text-xs font-bold shadow-lg animate-pulse" style="animation-delay: 0.4s;">
+              3
+            </div>
+          </button>
+          
+          <!-- Right Content (visible on mobile) -->
+          <div class="flex-1 md:hidden">
+            <div class="max-w-md text-center">
+              <div class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold mb-3">STEP 3</div>
+              <h3 class="text-2xl font-bold text-text-light dark:text-text-dark mb-3">Transform Your Wellness</h3>
+              <p class="text-text-light/70 dark:text-text-dark/70 leading-relaxed">
+                Follow your personalized plan, track your progress, and experience increased energy, better digestion, and holistic well-being through ancient Ayurvedic wisdom.
+              </p>
+            </div>
+          </div>
+          <div class="hidden md:block flex-1"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Button -->
+    <div class="text-center mt-16">
+      <button id="btnStartJourney" class="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white text-lg font-bold rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
+        <span>Start Your Journey Now</span>
+        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" style="font-size: 24px;">arrow_forward</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="flex flex-col gap-10 px-4 py-16 @container">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<button id="btnPrakriti" class="flex flex-col gap-4 rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-6 items-center text-center hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+<div class="text-primary text-4xl">
+<span class="material-symbols-outlined" style="font-size: 40px;">self_improvement</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight">My Prakriti</h3>
+<p class="text-text-light/80 dark:text-text-dark/80 text-sm font-normal leading-normal">Discover your unique mind-body constitution.</p>
+</div>
+</button>
+<button id="btnGeneratePlan" class="flex flex-col gap-4 rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-6 items-center text-center hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+<div class="text-primary text-4xl">
+<span class="material-symbols-outlined" style="font-size: 40px;">auto_awesome</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight">Generate Plan</h3>
+<p class="text-text-light/80 dark:text-text-dark/80 text-sm font-normal leading-normal">Create a new diet plan based on your goals.</p>
+</div>
+</button>
+<button id="btnMyPlans" class="flex flex-col gap-4 rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-6 items-center text-center hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+<div class="text-primary text-4xl">
+<span class="material-symbols-outlined" style="font-size: 40px;">menu_book</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight">My Diet Plans</h3>
+<p class="text-text-light/80 dark:text-text-dark/80 text-sm font-normal leading-normal">Access your saved and past diet plans.</p>
+</div>
+</button>
+<button id="btnExploreHerbs" class="flex flex-col gap-4 rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-6 items-center text-center hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+<div class="text-primary text-4xl">
+<span class="material-symbols-outlined" style="font-size: 40px;">eco</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight">Explore Herbs</h3>
+<p class="text-text-light/80 dark:text-text-dark/80 text-sm font-normal leading-normal">Learn about Ayurvedic herbs and their benefits.</p>
+</div>
+</button>
+<button id="btnLearnAyurveda" class="flex flex-col gap-4 rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-6 items-center text-center hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+<div class="text-primary text-4xl">
+<span class="material-symbols-outlined" style="font-size: 40px;">school</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight">Learn Ayurveda</h3>
+<p class="text-text-light/80 dark:text-text-dark/80 text-sm font-normal leading-normal">Deepen your knowledge of Ayurvedic principles.</p>
+</div>
+</button>
+<button id="btnAdvisory" class="flex flex-col gap-4 rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-6 items-center text-center hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+<div class="text-primary text-4xl">
+<span class="material-symbols-outlined" style="font-size: 40px;">support_agent</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight">Smart Advisory</h3>
+<p class="text-text-light/80 dark:text-text-dark/80 text-sm font-normal leading-normal">Get AI-powered advice for your wellness journey.</p>
+</div>
+</button>
+</div>
+</section>
+
+<!-- Community & Support Section -->
+<section class="flex flex-col gap-8 px-4 py-16 bg-gradient-to-br from-primary/5 via-secondary/5 to-primary/5 @container">
+<div class="flex flex-col gap-4 text-center items-center">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold text-sm mb-2">
+<span class="material-symbols-outlined" style="font-size: 20px;">forum</span>
+<span>Community & Support</span>
+</div>
+<h2 class="text-text-light dark:text-text-dark tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+Join Our Ayurvedic Wellness Community
+</h2>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal max-w-[720px]">Connect with fellow wellness seekers, share experiences, and get support from our community of Ayurveda practitioners.</p>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl mx-auto w-full">
+<!-- Forum Categories -->
+<div class="lg:col-span-2 flex flex-col gap-4">
+<div class="flex justify-between items-center">
+<h3 class="text-text-light dark:text-text-dark text-xl font-bold">Recent Discussions</h3>
+<button id="btnViewAllDiscussions" class="text-primary hover:text-secondary text-sm font-semibold transition-colors">View All →</button>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Discussion Card 1 -->
+<div class="flex gap-4 rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-5 hover:shadow-lg transition-all duration-300 cursor-pointer group">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold text-lg">
+AK
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-2 mb-2">
+<h4 class="text-text-light dark:text-text-dark font-semibold text-base group-hover:text-primary transition-colors line-clamp-1">
+Best morning routine for Vata imbalance?
+</h4>
+<span class="flex-shrink-0 text-xs text-text-light/60 dark:text-text-dark/60">2h ago</span>
+</div>
+<p class="text-text-light/70 dark:text-text-dark/70 text-sm line-clamp-2 mb-3">
+I've been experiencing anxiety and restlessness lately. Looking for suggestions on morning rituals that can help ground my Vata energy...
+</p>
+<div class="flex items-center gap-4 text-xs text-text-light/60 dark:text-text-dark/60">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined" style="font-size: 16px;">chat_bubble</span>
+<span>12 replies</span>
+</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined" style="font-size: 16px;">visibility</span>
+<span>245 views</span>
+</span>
+<span class="px-2 py-1 rounded-full bg-primary/10 text-primary font-medium">Vata</span>
+</div>
+</div>
+</div>
+
+<!-- Discussion Card 2 -->
+<div class="flex gap-4 rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-5 hover:shadow-lg transition-all duration-300 cursor-pointer group">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-secondary to-primary flex items-center justify-center text-white font-bold text-lg">
+PM
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-2 mb-2">
+<h4 class="text-text-light dark:text-text-dark font-semibold text-base group-hover:text-primary transition-colors line-clamp-1">
+Cooling foods for Pitta during summer?
+</h4>
+<span class="flex-shrink-0 text-xs text-text-light/60 dark:text-text-dark/60">5h ago</span>
+</div>
+<p class="text-text-light/70 dark:text-text-dark/70 text-sm line-clamp-2 mb-3">
+Looking for recipe ideas and food suggestions to keep my Pitta balanced during the hot summer months. What works for you?
+</p>
+<div class="flex items-center gap-4 text-xs text-text-light/60 dark:text-text-dark/60">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined" style="font-size: 16px;">chat_bubble</span>
+<span>8 replies</span>
+</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined" style="font-size: 16px;">visibility</span>
+<span>189 views</span>
+</span>
+<span class="px-2 py-1 rounded-full bg-secondary/10 text-secondary font-medium">Pitta</span>
+</div>
+</div>
+</div>
+
+<!-- Discussion Card 3 -->
+<div class="flex gap-4 rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-5 hover:shadow-lg transition-all duration-300 cursor-pointer group">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-primary/70 to-secondary/70 flex items-center justify-center text-white font-bold text-lg">
+RS
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-2 mb-2">
+<h4 class="text-text-light dark:text-text-dark font-semibold text-base group-hover:text-primary transition-colors line-clamp-1">
+Success story: 3 months on Kapha-balancing diet
+</h4>
+<span class="flex-shrink-0 text-xs text-text-light/60 dark:text-text-dark/60">1d ago</span>
+</div>
+<p class="text-text-light/70 dark:text-text-dark/70 text-sm line-clamp-2 mb-3">
+Wanted to share my journey! Lost 15 pounds and feeling more energetic than ever. Here's what worked for me...
+</p>
+<div class="flex items-center gap-4 text-xs text-text-light/60 dark:text-text-dark/60">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined" style="font-size: 16px;">chat_bubble</span>
+<span>24 replies</span>
+</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined" style="font-size: 16px;">visibility</span>
+<span>512 views</span>
+</span>
+<span class="px-2 py-1 rounded-full bg-primary/10 text-primary font-medium">Success Story</span>
+</div>
+</div>
+</div>
+</div>
+
+<button id="btnStartDiscussion" class="w-full py-4 rounded-xl bg-gradient-to-r from-primary to-secondary text-white font-semibold hover:shadow-lg hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" style="font-size: 20px;">add_circle</span>
+<span>Start New Discussion</span>
+</button>
+</div>
+
+<!-- Community Stats & Quick Links -->
+<div class="flex flex-col gap-4">
+<!-- Stats Card -->
+<div class="rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-6 flex flex-col gap-4">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" style="font-size: 24px;">groups</span>
+<span>Community Stats</span>
+</h3>
+<div class="flex flex-col gap-3">
+<div class="flex justify-between items-center">
+<span class="text-text-light/70 dark:text-text-dark/70 text-sm">Members</span>
+<span class="text-text-light dark:text-text-dark font-bold text-lg">12,458</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-text-light/70 dark:text-text-dark/70 text-sm">Discussions</span>
+<span class="text-text-light dark:text-text-dark font-bold text-lg">3,247</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-text-light/70 dark:text-text-dark/70 text-sm">Active Today</span>
+<span class="text-primary font-bold text-lg">847</span>
+</div>
+</div>
+</div>
+
+<!-- Popular Topics -->
+<div class="rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-6 flex flex-col gap-4">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" style="font-size: 24px;">local_fire_department</span>
+<span>Popular Topics</span>
+</h3>
+<div class="flex flex-wrap gap-2">
+<button class="px-3 py-2 rounded-lg bg-primary/10 text-primary text-sm font-medium hover:bg-primary/20 transition-colors">
+Vata Balance
+</button>
+<button class="px-3 py-2 rounded-lg bg-secondary/10 text-secondary text-sm font-medium hover:bg-secondary/20 transition-colors">
+Weight Loss
+</button>
+<button class="px-3 py-2 rounded-lg bg-primary/10 text-primary text-sm font-medium hover:bg-primary/20 transition-colors">
+Recipes
+</button>
+<button class="px-3 py-2 rounded-lg bg-secondary/10 text-secondary text-sm font-medium hover:bg-secondary/20 transition-colors">
+Meditation
+</button>
+<button class="px-3 py-2 rounded-lg bg-primary/10 text-primary text-sm font-medium hover:bg-primary/20 transition-colors">
+Herbs
+</button>
+<button class="px-3 py-2 rounded-lg bg-secondary/10 text-secondary text-sm font-medium hover:bg-secondary/20 transition-colors">
+Digestion
+</button>
+</div>
+</div>
+
+<!-- Get Support CTA -->
+<div class="rounded-xl bg-gradient-to-br from-primary to-secondary p-6 text-white flex flex-col gap-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined" style="font-size: 28px;">headset_mic</span>
+<h3 class="font-bold text-lg">Need Expert Help?</h3>
+</div>
+<p class="text-white/90 text-sm leading-relaxed">
+Connect with certified Ayurvedic practitioners for personalized guidance.
+</p>
+<button id="btnConnectExpert" class="mt-2 py-3 px-4 rounded-lg bg-white text-primary font-semibold hover:bg-white/90 transition-colors">
+Connect with Expert
+</button>
+</div>
+</div>
+</div>
+</section>
+<section class="px-4 py-16">
+<div class="text-center">
+<h2 class="text-text-light dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3">What is Ayurveda?</h2>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-relaxed max-w-3xl mx-auto">
+                                    Ayurveda, a natural system of medicine, originated in India more than 3,000 years ago. The term Ayurveda is derived from the Sanskrit words ayur (life) and veda (science or knowledge). Thus, Ayurveda translates to knowledge of life. Based on the idea that disease is due to an imbalance or stress in a person's consciousness, Ayurveda encourages certain lifestyle interventions and natural therapies to regain a balance between the body, mind, spirit, and the environment.
+                                </p>
+</div>
+</section>
+
+<!-- Floating Action Button for Doctor Consultation -->
+<!-- Floating Action Buttons -->
+<button id="fabDoctor" class="fab" title="Book Doctor Consultation" aria-label="Book Doctor Consultation">
+  <span class="fab-icon">🩺</span>
+</button>
+
+<button id="fabChat" class="fab" title="AI Chat Assistant" aria-label="AI Chat Assistant" onclick="document.getElementById('chatModal').style.display='flex'">
+  <span class="fab-icon">💬</span>
+</button>
+
+<!-- AI Chat Modal -->
+<div id="chatModal" class="modal" style="display: none;">
+  <div class="modal-content chat-modal-content">
+    <div class="chat-header">
+      <div class="chat-brand-info">
+        <div class="chat-avatar">🧠</div>
+        <div class="chat-title">AyurBot</div>
+      </div>
+      <button id="closeChatModal" class="close-button" onclick="document.getElementById('chatModal').style.display='none'">&times;</button>
+    </div>
+    
+    <div id="chatContainer" class="chat-container">
+      <div class="chat-welcome">
+        <div class="chat-welcome-brand">AyurBot</div>
+        <p class="chat-welcome-text">Ask me anything about Ayurveda, diet, or wellness!</p>
+      </div>
+    </div>
+    
+    <div class="chat-footer">
+      <form id="chatForm" class="chat-form" autocomplete="off" onsubmit="return window.chatSubmitHandler ? window.chatSubmitHandler(event) : false;">
+        <textarea id="chatInput" rows="1" placeholder="Ask me anything..." required></textarea>
+        <button type="submit" id="sendChatBtn" class="send-chat-btn">
+          <span class="material-symbols-outlined">send</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+</main>
+<footer class="w-full mt-20 py-8 border-t border-border-light dark:border-border-dark">
+<div class="flex flex-col md:flex-row items-center justify-between gap-6 px-4">
+<p class="text-sm text-text-light/70 dark:text-text-dark/70">© 2024 AyurBalance. All rights reserved.</p>
+<div class="flex items-center gap-6">
+<a class="text-sm text-text-light dark:text-text-dark hover:text-secondary dark:hover:text-secondary" href="#">Privacy Policy</a>
+<a class="text-sm text-text-light dark:text-text-dark hover:text-secondary dark:hover:text-secondary" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+
+<script type="module" src="./api.js"></script>
+<script type="module" src="./inferflow.js"></script>
+<script type="module" src="./script.js"></script>
+</body></html>
