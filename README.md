@@ -42,10 +42,10 @@
 ## **Tech Stack**
 
 **Backend:** Node.js (ESM), Express, MongoDB, JWT, bcryptjs, Zod, axios
+
 **AI Integration:** Hugging Face Router (chat advisory)
+
 **Frontend:** HTML, Tailwind CSS (CDN), Vanilla JavaScript
+
 **Tooling:** Nodemon, dotenv
 
--
-* Make a **one-line tagline** for judges
-* Create a **marketing-style landing page description**
