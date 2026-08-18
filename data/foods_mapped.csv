@@ -1,0 +1,301 @@
+"food_id","name","common_names","dosha_impact","tastes","qualities","energy","season","calories_100g","carbs_100g","protein_100g","fat_100g","notes","source_id"
+f_001,"Kitchari","khichdi|mung dal khichdi","Vata,Pitta,Kapha,Balancing","sweet,salty","heavy,unctuous","warming","winter,monsoon",120,18,6,3,"Gentle on digestion; good for all doshas","manual_001"
+f_002,"Amaranth, black","Rajgira|Ramdana","Pitta,Kapha","sweet,astringent","light,dry",cooling,autumn,356,59.98,14.59,5.74,"Gluten-free grain, good source of protein.",A001
+f_003,"Amaranth, pale brown","Rajgira|Ramdana|Chaulai","Pitta,Kapha","sweet,astringent","light,dry",cooling,autumn,356,61.46,13.27,5.56,"Gluten-free, high in calcium and iron.",A002
+f_004,"Bajra","Pearl Millet|Kambu|Sajjalu","Kapha,Vata","sweet,astringent","dry,light",heating,winter,348,61.78,10.96,5.43,"Warming millet, traditionally eaten in winter.",A003
+f_005,"Barley","Jau|Yava","Pitta,Kapha","sweet,astringent","light,dry",cooling,"spring,summer",316,61.29,10.94,1.30,"Good for Pitta and Kapha; can increase Vata.",A004
+f_006,"Jowar","Sorghum|Jonna","Pitta,Kapha","sweet,astringent","light,dry",cooling,"summer,autumn",334,67.68,9.97,1.73,"Cooling and drying. Can aggravate Vata in excess.",A005
+f_007,"Maize, dry","Corn|Makka|Mokka Jonna","Kapha,Pitta",sweet,"dry,light",heating,monsoon,334,64.77,8.80,3.77,"Heating and drying. Can increase Vata and Pitta.",A006
+f_008,"Maize, tender","Sweet Corn|Bhutta","Pitta,Vata",sweet,"heavy,unctuous",cooling,monsoon,120,22.69,3.57,1.40,"Softer and easier to digest than dry corn.",A007
+f_009,"Maize, tender, sweet","Sweet Corn","Pitta,Vata",sweet,"heavy,unctuous",cooling,monsoon,97,16.42,4.16,1.35,"Very sweet; pacifies Vata and Pitta.",A008
+f_010,"Quinoa","Quinoa","Pitta,Kapha","sweet,astringent","light,dry",heating,all,328,53.65,13.11,5.50,"Good protein source, balances Kapha and Pitta.",A009
+f_011,"Ragi","Finger Millet|Nachni","Kapha,Pitta","sweet,astringent","light,dry",heating,winter,321,66.82,7.16,1.92,"Warming and drying. Good for Kapha.",A010
+f_012,"Rice flakes","Poha|Aval|Atukulu","Vata,Pitta",sweet,"light,dry",cooling,all,354,76.75,7.44,1.14,"Very light and easy to digest. Good breakfast food.",A011
+f_013,"Rice, puffed","Murmura|Pori|Maramaralu",Kapha,sweet,"light,dry",cooling,all,362,77.68,7.47,1.62,"Very light and dry. Good for Kapha, but aggravates Vata.",A012
+f_014,"Rice, brown","Brown Chawal","Vata,Pitta",sweet,"heavy,dry",heating,all,354,74.80,9.16,1.24,"More fiber and nutrients than white rice. Slightly heating.",A013
+f_015,"Rice, parboiled","Puzhungal Arisi|Uppudu Biyyam","Vata,Pitta,Kapha",sweet,"light,unctuous",cooling,all,352,77.16,7.81,0.55,"Lighter to digest than raw rice.",A014
+f_016,"Rice, white","Chawal|Arisi|Biyyam","Vata,Pitta,Kapha",sweet,"heavy,unctuous",cooling,all,356,78.24,7.94,0.52,"Easy to digest. Basmati is considered most sattvic.",A015
+f_017,"Samai","Little Millet","Pitta,Kapha","sweet,astringent","light,dry",heating,"winter,spring",346,65.55,10.13,3.89,"Warming and light. Good for Kapha.",A016
+f_018,"Varagu","Kodo Millet|Arikelu","Pitta,Kapha","sweet,astringent","light,dry",cooling,summer,332,66.19,8.92,2.55,"Detoxifying millet. Good for Pitta and Kapha.",A017
+f_019,"Wheat flour, refined","Maida","Vata,Pitta",sweet,"heavy,unctuous",cooling,all,352,74.27,10.36,0.76,"Heavy and hard to digest. Increases Kapha.",A018
+f_020,"Wheat flour, atta","Atta|Godhuma Pindi",Vata,sweet,"heavy,unctuous",heating,all,320,64.17,10.57,1.53,"Staple flour. Warming and nourishing for Vata.",A019
+f_021,"Wheat, whole","Gehun|Godhumalu",Vata,sweet,"heavy,unctuous",heating,all,322,64.72,10.59,1.47,"Nourishing and grounding for Vata.",A020
+f_022,"Wheat, bulgur","Dalia|Godhuma Rava","Vata,Pitta",sweet,"heavy,unctuous",heating,all,342,69.06,10.84,1.45,"Easier to digest than whole wheat.",A021
+f_023,"Wheat, semolina","Suji|Rava","Vata,Pitta",sweet,"heavy,dry",heating,all,334,68.43,11.38,0.74,"Lighter than whole wheat. Can increase Kapha.",A022
+f_024,"Wheat, vermicelli","Seviyan|Semiya","Vata,Pitta",sweet,"heavy,dry",heating,all,333,70.39,9.70,0.45,"Similar properties to semolina.",A023
+f_025,"Wheat, vermicelli, roasted","Roasted Semiya","Vata,Pitta",sweet,"light,dry",heating,all,340,71.42,10.37,0.49,"Roasting makes it lighter and less Kapha-aggravating.",A024
+f_026,"Bengal gram, dal","Chana Dal|Sanaga Pappu","Pitta,Kapha","sweet,astringent","light,dry",cooling,all,329,46.72,21.55,5.31,"Drying and astringent. Can aggravate Vata.",B001
+f_027,"Bengal gram, whole","Kala Chana|Black Chickpea","Pitta,Kapha","sweet,astringent","light,dry",cooling,all,287,39.56,18.77,5.11,"Very drying. Increases Vata.",B002
+f_028,"Black gram, dal","Urad Dal|Minapa Pappu",Vata,sweet,"heavy,unctuous",heating,all,324,51.00,23.06,1.69,"Very nourishing and strengthening. Increases Kapha.",B003
+f_029,"Black gram, whole","Sabut Urad|Uzhunnu",Vata,sweet,"heavy,unctuous",heating,all,291,43.99,21.97,1.58,"Heaviest of all dals. Increases Kapha significantly.",B004
+f_030,"Cowpea, brown","Lobia|Karamani|Bobbarlu","Kapha,Pitta","sweet,astringent","light,dry",cooling,all,320,54.62,20.36,1.15,"Lighter than other beans. Can be slightly Vata-aggravating.",B005
+f_031,"Cowpea, white","White Lobia|Alasande","Kapha,Pitta","sweet,astringent","light,dry",cooling,all,320,53.77,21.25,1.14,"Similar to brown cowpea.",B006
+f_032,"Field bean, black","Black Beans","Vata,Kapha","sweet,astringent","heavy,dry",heating,winter,276,43.46,19.93,0.92,"Heavy and drying. Increases Vata.",B007
+f_033,"Field bean, brown","Brown Beans","Vata,Kapha","sweet,astringent","heavy,dry",heating,winter,283,45.24,19.90,0.98,"Heavy and drying. Increases Vata.",B008
+f_034,"Field bean, white","Cannellini Beans","Vata,Kapha","sweet,astringent","heavy,dry",heating,winter,280,44.53,19.84,0.94,"Heavy and drying. Increases Vata.",B009
+f_035,"Mung bean, dal","Moong Dal|Pasi Paruppu|Pesara Pappu","Vata,Pitta,Kapha,Balancing","sweet,astringent","light,dry",cooling,all,326,52.59,23.88,1.35,"Tridoshic. Easiest dal to digest. Good for recovery.",B010
+f_036,"Mung bean, whole","Green Gram|Moong|Pesalu|Pasi Payaru","Vata,Pitta,Kapha,Balancing","sweet,astringent","light,dry",cooling,all,294,46.13,22.53,1.14,"Tridoshic. Easiest bean to digest. Excellent for recovery.",B011
+f_037,"Horse gram, whole","Kulthi|Kollu|Ulavalu","Kapha,Vata","astringent,sweet","light,dry,sharp",heating,winter,330,57.24,21.73,0.62,"Very heating and drying. Excellent for Kapha, but aggravates Pitta.",B012
+f_038,"Lentil, dal","Masoor Dal|Mysore Paruppu","Pitta,Kapha","sweet,astringent","light,dry",cooling,all,322,52.53,24.35,0.75,"Cooling and light. Good for Pitta and Kapha.",B013
+f_039,"Lentil, whole, brown","Sabut Masoor","Pitta,Kapha","sweet,astringent","light,dry",cooling,all,300,48.47,22.49,0.64,"Slightly heavier than split masoor.",B014
+f_040,"Lentil, whole, yellowish","Yellow Lentil","Pitta,Kapha","sweet,astringent","light,dry",cooling,all,298,47.91,22.87,0.61,"Similar to brown lentil.",B015
+f_041,"Moth bean","Matki|Narippayir","Kapha,Vata","sweet,astringent","light,dry",heating,monsoon,309,52.09,19.75,1.76,"Drying. Good for Kapha. Can increase Vata.",B016
+f_042,"Peas, dry","Sukhi Matar|Batani",Kapha,"sweet,astringent","light,dry",cooling,all,303,48.93,20.43,1.89,"Drying and light. Increases Vata.",B017
+f_043,"Rajmah, black","Black Kidney Beans","Vata,Kapha","sweet,astringent","heavy,dry",cooling,winter,298,49.59,19.01,1.62,"Heavy and Vata-aggravating.",B018
+f_044,"Rajmah, brown","Brown Kidney Beans","Vata,Kapha","sweet,astringent","heavy,dry",cooling,winter,298,48.83,19.50,1.68,"Heavy and Vata-aggravating.",B019
+f_045,"Rajmah, red","Red Kidney Beans|Rajma","Vata,Kapha","sweet,astringent","heavy,dry",cooling,winter,300,48.61,19.91,1.77,"Heavy and Vata-aggravating. Needs strong digestion.",B020
+f_046,"Tur dal","Red Gram Dal|Arhar Dal|Toor Dal|Kandi Pappu|Tuvaram Paruppu","Pitta,Kapha","sweet,astringent","light,dry",cooling,all,331,55.23,21.70,1.56,"Very common dal in India. Can be slightly Vata-aggravating.",B021
+f_047,"Red gram, whole","Sabut Arhar|Tuvarai","Pitta,Kapha","sweet,astringent","heavy,dry",cooling,all,274,42.48,20.47,1.38,"Heavier than split dal.",B022
+f_048,"Ricebean","Ricebean",Kapha,"sweet,astringent","light,dry",cooling,all,303,51.26,19.97,0.74,"Balances Kapha and Pitta.",B023
+f_049,"Soybean, brown","Bhatmas",Kapha,"sweet,astringent","heavy,unctuous",heating,winter,382,12.79,35.58,19.82,"Very heavy and hard to digest. Increases Pitta and Kapha.",B024
+f_050,"Soybean, white","Soybean",Kapha,"sweet,astringent","heavy,unctuous",heating,winter,377,10.16,37.80,19.42,"Very heavy and hard to digest. Increases Pitta and Kapha.",B025
+f_051,"Agathi leaves","Agathi Keerai|Avise Akulu",Pitta,bitter,"light,dry",cooling,spring,71,5.21,8.01,1.35,"Very bitter and cooling. Excellent for Pitta. High in iron.",C001
+f_052,"Amaranth leaves, green","Chaulai|Thandu Keerai|Thotakoora","Pitta,Kapha","sweet,astringent","light,dry",cooling,summer,31,2.28,3.29,0.65,"Cooling and cleansing.",C002
+f_053,"Amaranth leaves, red","Lal Chaulai|Lal Thotakoora","Pitta,Kapha","sweet,astringent","light,dry",cooling,summer,34,2.37,3.93,0.63,"Similar to green amaranth.",C003
+f_054,"Amaranth leaves, red and green mix","Chaulai","Pitta,Kapha","sweet,astringent","light,dry",cooling,summer,32,2.87,3.09,0.53,"Cooling and cleansing.",C004
+f_055,"Amaranth, spined, leaves, green","Mulla Thotakoora|Mulaikeerai","Pitta,Kapha","sweet,astringent","light,dry",cooling,summer,26,1.61,3.54,0.36,"Slightly more 'rough' than other amaranth.",C005
+f_056,"Amaranth, spined, leaves, red and green mix","Kantewali Chaulai","Pitta,Kapha","sweet,astringent","light,dry",cooling,summer,24,1.45,2.80,0.34,"Slightly more 'rough' than other amaranth.",C006
+f_057,"Basella leaves","Pui Shaak|Bachhali","Pitta,Vata",sweet,"heavy,unctuous,slimy",cooling,monsoon,20,2.01,1.57,0.45,"Slimy quality is good for Vata and Pitta, but increases Kapha.",C007
+f_058,"Bathua leaves","Bathua Sag|Paruppukkeerai","Vata,Pitta,Kapha","salty,sweet","light,sharp",heating,winter,28,2.56,2.50,0.44,"Warming leafy green, good for winter. Cleanses blood.",C008
+f_059,"Beet greens","Beetroot Leaves","Pitta,Kapha","bitter,pungent","light,sharp",heating,winter,35,3.86,2.38,0.75,"Warming and cleansing. Increases Vata.",C009
+f_060,"Betel leaves, big","Pan Patta|Vettilai","Kapha,Vata","pungent,bitter,astringent","light,sharp",heating,all,48,7.37,2.51,0.75,"Stimulates digestion. Increases Pitta.",C010
+f_061,"Betel leaves, small","Pan Patta|Vettilai","Kapha,Vata","pungent,bitter,astringent","light,sharp",heating,all,44,6.16,2.62,0.75,"Stimulates digestion. Increases Pitta.",C011
+f_062,"Brussels sprouts","Brussels Sprouts","Vata,Kapha","bitter,astringent","light,dry",cooling,"autumn,winter",44,5.09,4.26,0.50,"Very drying and light. Strongly aggravates Vata.",C012
+f_063,"Cabbage, Chinese","Pak Choi","Kapha,Pitta","sweet,astringent","light,dry",cooling,winter,18,2.36,1.58,0.13,"Lighter and more Pitta-pacifying than green cabbage.",C013
+f_064,"Cabbage, collard greens","Collard Greens","Kapha,Pitta","bitter,astringent","light,dry",cooling,winter,30,2.79,3.63,0.27,"Drying. Can increase Vata.",C014
+f_065,"Cabbage, green","Bandh Gobi|Muttaikose","Kapha,Pitta","sweet,astringent","light,dry",cooling,winter,22,3.25,1.36,0.12,"Can be gassy and aggravate Vata.",C015
+f_066,"Cabbage, violet","Red Cabbage|Lal Bandh Gobi","Kapha,Pitta","sweet,astringent","light,dry",cooling,winter,23,3.54,1.39,0.21,"Higher in antioxidants than green cabbage.",C016
+f_067,"Cauliflower leaves","Phul Gobi Patta","Pitta,Kapha","bitter,astringent","light,dry",cooling,winter,35,3.39,3.90,0.42,"Bitter and cleansing.",C017
+f_068,"Colocasia leaves, green","Arvi ka Patta|Chama Akulu","Vata,Pitta",sweet,"heavy,unctuous",cooling,monsoon,44,3.69,3.42,1.38,"Must be cooked well to remove oxalates. Increases Kapha.",C018
+f_069,"Drumstick leaves","Moringa|Murungai Keerai","Kapha,Vata","bitter,pungent","light,dry,sharp",heating,all,67,5.62,6.41,1.64,"Highly nutritious. Very cleansing. Increases Pitta.",C019
+f_070,"Fenugreek leaves","Methi|Vendhaiya Keerai","Kapha,Vata","bitter,pungent","light,dry",heating,winter,34,2.17,3.68,0.83,"Excellent for Kapha and Vata. Reduces blood sugar.",C020
+f_071,"Garden cress","Halim|Alivirai Keerai","Vata,Kapha",pungent,"light,unctuous",heating,winter,50,4.48,5.62,0.80,"Warming and nourishing. Good for post-partum.",C021
+f_072,"Gogu leaves, green","Gongura|Pulichai Keerai","Kapha,Pitta","sour,astringent","sharp,dry",heating,summer,36,4.06,1.86,1.09,"Sour and heating. Increases Pitta.",C022
+f_073,"Gogu leaves, red","Gongura","Kapha,Pitta","sour,astringent","sharp,dry",heating,summer,37,4.24,1.85,1.07,"Sour and heating. Increases Pitta.",C023
+f_074,"Knol-Khol, leaves","Ganth Gobi Sag|Noolkol Keerai","Pitta,Kapha","bitter,astringent","light,dry",cooling,winter,43,6.16,3.12,0.35,"Bitter and cleansing.",C024
+f_075,"Lettuce","Lettuce",Pitta,"bitter,sweet","light,dry",cooling,spring,22,3.01,1.54,0.27,"Cooling and light. Can increase Vata.",C025
+f_076,"Mustard leaves","Sarson ka Sag","Kapha,Vata","pungent,bitter","light,sharp,oily",heating,winter,30,2.41,3.52,0.51,"Very heating. Excellent for Kapha. Increases Pitta.",C026
+f_077,"Pak Choi leaves","Bok Choy","Pitta,Kapha","sweet,bitter","light,dry",cooling,winter,16,1.78,1.41,0.25,"Cooling and light.",C027
+f_078,"Parsley","Parsley","Kapha,Vata","pungent,bitter","light,dry",heating,spring,73,9.43,5.55,1.14,"Diuretic and cleansing. Increases Pitta.",C028
+f_079,"Ponnaganni","Ponnaganti Koora|Ponnanganni Keerai",Pitta,"sweet,bitter","heavy,unctuous",cooling,all,51,5.17,5.29,0.71,"Cooling. Good for eyes and skin.",C029
+f_080,"Pumpkin leaves, tender","Gummadi Akulu|Parangi Ilai","Pitta,Vata","sweet,bitter","light,dry",cooling,monsoon,44,4.75,4.21,0.74,"Mildly cleansing.",C030
+f_081,"Radish leaves","Mooli ka Sag|Mullangi Keerai","Kapha,Vata","pungent,bitter","light,sharp",heating,winter,26,2.77,2.22,0.51,"Heating and cleansing. Increases Pitta.",C031
+f_082,"Rumex leaves","Sorrel|Chukka Kura","Kapha,Pitta","sour,astringent","light,dry",heating,spring,20,2.33,1.62,0.33,"Sour and heating. Increases Pitta.",C032
+f_083,"Spinach","Palak|Pasalai Keerai","Pitta,Kapha","astringent,sweet","heavy,unctuous",cooling,"winter,spring",24,2.05,2.14,0.64,"High in iron and oxalates. Best when cooked.",C033
+f_084,"Tamarind leaves, tender","Chinta Chiguru|Puliam Ilai","Kapha,Pitta","sour,astringent","light,dry",heating,spring,72,10.04,5.84,0.49,"Sour and heating. Good appetizer.",C034
+f_085,"Ash gourd","Winter Melon|Petha|Boodida Gummadi","Vata,Pitta,Kapha,Balancing",sweet,"light,unctuous",cooling,"autumn,winter",17,2.84,0.79,0.14,"Highly sattvic and cooling. Excellent for Pitta.",D001
+f_086,"Bamboo shoot, tender","Baans|Moongil Kuruthu","Kapha,Pitta","astringent,sweet","light,dry",cooling,monsoon,16,1.67,1.33,0.35,"Drying. Can increase Vata.",D002
+f_087,"Bean scarlet, tender","Scarlet Runner Beans","Vata,Kapha","sweet,astringent","heavy,dry",cooling,monsoon,43,5.16,2.86,0.99,"Can be gassy. Vata-aggravating.",D003
+f_088,"Bitter gourd, long","Karela|Kakara Kaya|Paavakkai","Pitta,Kapha","bitter,pungent","light,dry",cooling,summer,21,2.82,1.44,0.24,"Excellent for Pitta and Kapha. Cleanses blood. Increases Vata.",D004
+f_089,"Bitter gourd, short","Chota Karela|Uchhe","Pitta,Kapha","bitter,pungent","light,dry",cooling,summer,19,2.53,1.34,0.24,"Similar to long bitter gourd, often more bitter.",D005
+f_090,"Bitter gourd, smooth ridge","Smooth Karela","Pitta,Kapha","bitter,pungent","light,dry",cooling,summer,19,2.29,1.61,0.26,"Milder than the jagged variety.",D006
+f_091,"Bottle gourd, elongate","Lauki|Dudhi|Sorakaya",Pitta,sweet,"light,unctuous",cooling,summer,11,1.68,0.53,0.13,"Very cooling and easy to digest. Excellent for Pitta.",D007
+f_092,"Bottle gourd, round","Lauki",Pitta,sweet,"light,unctuous",cooling,summer,14,2.53,0.42,0.12,"Very cooling and easy to digest. Excellent for Pitta.",D008
+f_093,"Bottle gourd, dark green","Lauki",Pitta,sweet,"light,unctuous",cooling,summer,13,2.25,0.49,0.13,"Very cooling and easy to digest. Excellent for Pitta.",D009
+f_094,"Brinjal-1","Eggplant|Baingan|Vankaya","Kapha,Vata","pungent,sweet","light,dry",heating,all,27,3.49,1.77,0.39,"Heating and drying. Can aggravate Pitta and Vata.",D010
+f_095,"Brinjal-2","Eggplant|Baingan|Vankaya","Kapha,Vata","pungent,sweet","light,dry",heating,all,24,2.71,1.82,0.34,"Heating and drying. Can aggravate Pitta and Vata.",D011
+f_096,"Brinjal-3","Eggplant|Baingan|Vankaya","Kapha,Vata","pungent,sweet","light,dry",heating,all,24,3.38,1.36,0.33,"Heating and drying. Can aggravate Pitta and Vata.",D012
+f_097,"Brinjal-4","Eggplant|Baingan|Vankaya","Kapha,Vata","pungent,sweet","light,dry",heating,all,24,3.19,1.51,0.31,"Heating and drying. Can aggravate Pitta and Vata.",D013
+f_098,"Brinjal-5","Eggplant|Baingan|Vankaya","Kapha,Vata","pungent,sweet","light,dry",heating,all,27,4.02,1.38,0.29,"Heating and drying. Can aggravate Pitta and Vata.",D014
+f_099,"Brinjal-6","Eggplant|Baingan|Vankaya","Kapha,Vata","pungent,sweet","light,dry",heating,all,23,3.29,1.46,0.29,"Heating and drying. Can aggravate Pitta and Vata.",D015
+f_100,"Brinjal-7","Eggplant|Baingan|Vankaya","Kapha,Vata","pungent,sweet","light,dry",heating,all,23,3.10,1.40,0.37,"Heating and drying. Can aggravate Pitta and Vata.",D016
+f_101,"Brinjal-8","Eggplant|Baingan|Vankaya","Kapha,Vata","pungent,sweet","light,dry",heating,all,28,3.75,1.82,0.33,"Heating and drying. Can aggravate Pitta and Vata.",D017
+f_102,"Brinjal-9","Eggplant|Baingan|Vankaya","Kapha,Vata","pungent,sweet","light,dry",heating,all,25,3.52,1.47,0.35,"Heating and drying. Can aggravate Pitta and Vata.",D018
+f_103,"Brinjal-10","Eggplant|Baingan|Vankaya","Kapha,Vata","pungent,sweet","light,dry",heating,all,28,4.08,1.68,0.25,"Heating and drying. Can aggravate Pitta and Vata.",D019
+f_104,"Brinjal-11","Eggplant|Baingan|Vankaya","Kapha,Vata","pungent,sweet","light,dry",heating,all,25,3.53,1.43,0.31,"Heating and drying. Can aggravate Pitta and Vata.",D020
+f_105,"Brinjal-12","Eggplant|Baingan|Vankaya","Kapha,Vata","pungent,sweet","light,dry",heating,all,22,2.73,1.60,0.27,"Heating and drying. Can aggravate Pitta and Vata.",D021
+f_106,"Brinjal-13","Eggplant|Baingan|Vankaya","Kapha,Vata","pungent,sweet","light,dry",heating,all,29,4.51,1.49,0.31,"Heating and drying. Can aggravate Pitta and Vata.",D022
+f_107,"Brinjal-14","Eggplant|Baingan|Vankaya","Kapha,Vata","pungent,sweet","light,dry",heating,all,25,3.27,1.56,0.35,"Heating and drying. Can aggravate Pitta and Vata.",D023
+f_108,"Brinjal-15","Eggplant|Baingan|Vankaya","Kapha,Vata","pungent,sweet","light,dry",heating,all,27,3.96,1.58,0.29,"Heating and drying. Can aggravate Pitta and Vata.",D024
+f_109,"Brinjal-16","Eggplant|Baingan|Vankaya","Kapha,Vata","pungent,sweet","light,dry",heating,all,25,3.46,1.26,0.34,"Heating and drying. Can aggravate Pitta and Vata.",D025
+f_110,"Brinjal-17","Eggplant|Baingan|Vankaya","Kapha,Vata","pungent,sweet","light,dry",heating,all,22,2.89,1.18,0.36,"Heating and drying. Can aggravate Pitta and Vata.",D026
+f_111,"Brinjal-18","Eggplant|Baingan|Vankaya","Kapha,Vata","pungent,sweet","light,dry",heating,all,28,4.10,1.47,0.33,"Heating and drying. Can aggravate Pitta and Vata.",D027
+f_112,"Brinjal-19","Eggplant|Baingan|Vankaya","Kapha,Vata","pungent,sweet","light,dry",heating,all,24,3.39,1.26,0.31,"Heating and drying. Can aggravate Pitta and Vata.",D028
+f_113,"Brinjal-20","Eggplant|Baingan|Vankaya","Kapha,Vata","pungent,sweet","light,dry",heating,all,24,3.15,1.44,0.34,"Heating and drying. Can aggravate Pitta and Vata.",D029
+f_114,"Brinjal-21","Eggplant|Baingan|Vankaya","Kapha,Vata","pungent,sweet","light,dry",heating,all,27,3.93,1.36,0.35,"Heating and drying. Can aggravate Pitta and Vata.",D030
+f_115,"Brinjal - all varieties","Eggplant|Baingan|Vankaya","Kapha,Vata","pungent,sweet","light,dry",heating,all,25,3.52,1.48,0.32,"Heating and drying. Can aggravate Pitta and Vata.",D031
+f_116,"Broad beans","Bakla|Avarai",Vata,"astringent,sweet","heavy,dry",cooling,winter,29,2.11,3.85,0.15,"Very Vata-aggravating. Difficult to digest.",D032
+f_117,"Capsicum, green","Shimla Mirch|Koda Milagai","Vata,Pitta,Kapha",pungent,"light,dry",heating,all,16,1.84,1.11,0.34,"Can aggravate all three doshas. Pitta-aggravating.",D033
+f_118,"Capsicum, red","Red Bell Pepper","Pitta,Kapha,Vata","sweet,pungent","light,dry",heating,all,20,2.14,1.47,0.47,"Sweeter and more Pitta-aggravating than green.",D034
+f_119,"Capsicum, yellow","Yellow Bell Pepper","Pitta,Kapha,Vata","sweet,pungent","light,dry",heating,all,19,1.95,1.35,0.41,"Sweetest of the bell peppers.",D035
+f_120,"Cauliflower","Phul Gobi|Pookosu","Kapha,Pitta","astringent,sweet","light,dry",cooling,winter,23,2.03,2.15,0.44,"Can be gassy and aggravate Vata if not cooked well.",D036
+f_121,"Celery stalk","Celery","Vata,Kapha","bitter,pungent","light,dry",cooling,winter,17,2.33,0.98,0.24,"Good for Kapha, but increases Vata.",D037
+f_122,"Cho-cho-marrow","Chow-Chow|Bangalore Brinjal","Pitta,Kapha",sweet,"light,unctuous",cooling,monsoon,19,3.47,0.66,0.15,"Cooling and hydrating.",D038
+f_123,"Cluster beans","Guar|Gawar|Kothavaranga","Vata,Kapha","astringent,sweet","heavy,dry",cooling,monsoon,40,4.91,3.55,0.37,"Very drying. Increases Vata.",D039
+f_124,"Colocasia, stem, black","Arvi ke Kade|Chembin Thandu","Vata,Pitta",sweet,"heavy,unctuous",cooling,monsoon,24,3.83,0.76,0.34,"Increases Kapha. Must be cooked well.",D040
+f_125,"Colocasia, stem, green","Arvi ke Kade|Chembin Thandu","Vata,Pitta",sweet,"heavy,unctuous",cooling,monsoon,19,2.86,0.91,0.22,"Increases Kapha. Must be cooked well.",D041
+f_126,"Corn, baby","Baby Corn",Vata,"sweet,astringent","light,dry",heating,monsoon,73,11.66,2.69,1.33,"Drying. Can increase Vata.",D042
+f_127,"Cucumber, green, elongate","Kheera|Dosakaya|Vellarikkai",Pitta,"sweet,astringent","light,unctuous",cooling,summer,20,3.48,0.71,0.16,"Very cooling. Excellent for Pitta.",D043
+f_128,"Cucumber, green, short","Kheera|Dosakaya|Vellarikkai",Pitta,"sweet,astringent","light,unctuous",cooling,summer,17,2.82,0.83,0.18,"Very cooling. Excellent for Pitta.",D044
+f_129,"Cucumber, orange, round","Dosakaya",Pitta,"sweet,sour","light,unctuous",cooling,summer,20,3.01,0.98,0.24,"Also known as Yellow Cucumber. Cooling.",D045
+f_130,"Drumstick","Saijan|Murungakkai|Mulakaada","Kapha,Vata","pungent,bitter","light,dry,sharp",heating,all,29,3.76,2.62,0.12,"Cleansing and heating. Increases Pitta.",D046
+f_131,"Field beans, tender, broad","Sem|Avarai",Vata,"astringent,sweet","heavy,dry",cooling,winter,31,2.75,3.06,0.64,"Vata-aggravating.",D047
+f_132,"Field beans, tender, lean","Sem|Avarai",Vata,"astringent,sweet","heavy,dry",cooling,winter,34,2.85,3.71,0.60,"Vata-aggravating.",D048
+f_133,"French beans, country","Beans|Fansi","Vata,Pitta,Kapha","sweet,astringent","light,dry",cooling,all,24,2.68,2.49,0.26,"Drying. Can increase Vata.",D049
+f_134,"French beans, hybrid","Beans","Vata,Pitta,Kapha","sweet,astringent","light,dry",cooling,all,22,2.63,2.12,0.19,"Drying. Can increase Vata.",D050
+f_135,"Jack fruit, raw","Kacha Kathal|Panasa Kaya","Vata,Kapha","astringent,sweet","heavy,dry",cooling,summer,26,3.48,1.98,0.35,"Heavy and Vata-aggravating.",D051
+f_136,"Jack fruit, seed, mature","Kathal Beej|Panasa Ginjalu","Vata,Kapha","sweet,astringent","heavy,dry",heating,summer,77,11.81,5.79,0.44,"Heavy and hard to digest.",D052
+f_137,"Knol - Khol","Kohlrabi|Ganth Gobi|Noolkol","Kapha,Pitta","sweet,astringent","light,dry",cooling,winter,16,1.39,1.58,0.35,"Cooling and light. Can increase Vata.",D053
+f_138,"Kovai, big","Ivy Gourd|Tindora|Dondakaya","Kapha,Pitta","sweet,astringent","light,dry",cooling,all,17,2.01,1.39,0.24,"Good for balancing Kapha and Pitta.",D054
+f_139,"Kovai, small","Ivy Gourd|Tindora|Dondakaya","Kapha,Pitta","sweet,astringent","light,dry",cooling,all,19,2.41,1.22,0.24,"Good for balancing Kapha and Pitta.",D055
+f_140,"Ladies finger","Okra|Bhindi|Vendakkai","Vata,Pitta","sweet,astringent","heavy,unctuous,slimy",cooling,summer,28,3.62,2.08,0.22,"Slimy quality is good for Vata and Pitta. Increases Kapha.",D056
+f_141,"Mango, green, raw","Kacha Aam|Mamidi Kaya|Mangai",Pitta,"sour,astringent","light,dry",heating,summer,49,10.59,0.69,0.08,"Very sour and heating. Strongly increases Pitta.",D057
+f_142,"Onion, stalk","Spring Onion|Hara Pyaz|Ulli Kadalu","Vata,Kapha","pungent,sweet","light,sharp",heating,winter,26,2.99,2.07,0.26,"Lighter and less Pitta-aggravating than bulb.",D058
+f_143,"Papaya, raw","Kacha Papita|Boppayi Kaya","Kapha,Pitta","pungent,bitter","light,dry",heating,all,24,4.40,0.50,0.23,"Heating. Good for digestion. Increases Pitta.",D059
+f_144,"Parwar","Pointed Gourd|Parwal|Potlakaya","Vata,Pitta,Kapha",sweet,"light,unctuous",cooling,monsoon,24,3.54,1.40,0.30,"Tridoshic. Easy to digest.",D060
+f_145,"Peas, fresh","Matar|Batani","Vata,Kapha","sweet,astringent","light,dry",cooling,winter,81,11.88,7.25,0.13,"Can be Vata-aggravating.",D061
+f_146,"Plantain, flower","Banana Flower|Vazhapoo|Arati Puvvu","Pitta,Kapha","astringent,bitter","dry,light",cooling,all,21,2.15,1.47,0.63,"Astringent. Good for Pitta.",D062
+f_147,"Plantain, green","Kacha Kela|Arati Kaya|Vazhakkai","Vata,Kapha","astringent,sweet","heavy,dry",cooling,all,80,17.58,1.18,0.23,"Very astringent and drying. Increases Vata.",D063
+f_148,"Plantain, stem","Banana Stem|Vazhai Thandu|Arati Doota","Pitta,Kapha","astringent,sweet","light,dry",cooling,all,39,8.64,0.35,0.16,"Excellent for Kapha. Cleansing and diuretic.",D064
+f_149,"Pumpkin, green, cylindrical","Kaddu|Gummadi","Pitta,Vata,Kapha",sweet,"heavy,unctuous",cooling,autumn,25,4.22,0.87,0.18,"Balancing and nourishing.",D065
+f_150,"Pumpkin, orange, round","Kaddu|Gummadi","Pitta,Vata,Kapha",sweet,"heavy,unctuous",cooling,autumn,23,4.00,0.84,0.16,"Balancing and nourishing.",D066
+f_151,"Red gram, tender, fresh","Green Pigeon Peas|Pacchi Kandulu","Vata,Pitta,Kapha","sweet,astringent","light,dry",cooling,winter,124,19.46,8.09,0.92,"Easier to digest than dry dal.",D067
+f_152,"Ridge gourd","Turai|Beerakaya|Peerkankai","Pitta,Kapha",sweet,"light,unctuous",cooling,summer,13,1.72,0.91,0.14,"Cooling. Good for Pitta.",D068
+f_153,"Ridge gourd, smooth skin","Turai|Beerakaya|Peerkankai","Pitta,Kapha",sweet,"light,unctuous",cooling,summer,15,2.24,0.98,0.13,"Cooling. Good for Pitta.",D069
+f_154,"Snake gourd, long, pale green","Chachinda|Potlakaya|Pudalangai","Pitta,Kapha","bitter,sweet","light,dry",cooling,monsoon,12,1.27,0.98,0.25,"Cooling. Balances Pitta.",D070
+f_155,"Snake gourd, long, dark green","Chachinda|Potlakaya|Pudalangai","Pitta,Kapha","bitter,sweet","light,dry",cooling,monsoon,12,1.23,0.89,0.25,"Cooling. Balances Pitta.",D071
+f_156,"Snake gourd, short","Chachinda|Potlakaya|Pudalangai","Pitta,Kapha","bitter,sweet","light,dry",cooling,monsoon,15,2.15,0.54,0.26,"Cooling. Balances Pitta.",D072
+f_157,"Tinda, tender","Tinda|Indian Round Gourd",Pitta,sweet,"light,unctuous",cooling,summer,14,1.90,1.02,0.17,"Easy to digest. Good for Pitta.",D073
+f_158,"Tomato, green","Hara Tamatar|Pacchi Tomato","Pitta,Kapha","sour,astringent","light,sharp",heating,all,21,3.18,1.12,0.27,"Sour and heating. Aggravates Pitta.",D074
+f_159,"Tomato, ripe, hybrid","Tamatar|Tomato","Pitta,Kapha,Vata","sour,sweet","light,unctuous",heating,all,19,3.20,0.76,0.25,"Sour and heating. Aggravates Pitta.",D075
+f_160,"Tomato, ripe, local","Tamatar|Tomato","Pitta,Kapha,Vata","sour,sweet","light,unctuous",heating,all,20,2.71,0.90,0.47,"Sour and heating. Aggravates Pitta.",D076
+f_161,"Zucchini, green","Zucchini","Pitta,Kapha",sweet,"heavy,unctuous",cooling,summer,20,2.33,1.10,0.51,"Cooling and hydrating.",D077
+f_162,"Zucchini, yellow","Zucchini","Pitta,Kapha",sweet,"heavy,unctuous",cooling,summer,19,2.20,1.31,0.44,"Cooling and hydrating.",D078
+f_163,"Apple, big","Sev|Seb","Pitta,Kapha","sweet,astringent","light,dry",cooling,"autumn,winter",62,13.11,0.29,0.64,"Cooked apples are Vata-pacifying. Raw apples can be gassy.",E001
+f_164,"Apple, green","Hara Sev","Pitta,Kapha","sour,astringent","light,dry",cooling,"autumn,winter",51,10.65,0.46,0.50,"Sourness increases Pitta more than sweet apples.",E002
+f_165,"Apple, small","Sev|Seb","Pitta,Kapha","sweet,astringent","light,dry",cooling,"autumn,winter",64,13.95,0.31,0.53,"Cooked apples are Vata-pacifying. Raw apples can be gassy.",E003
+f_166,"Apple, small, Kashmir","Kashmiri Sev","Pitta,Kapha","sweet,astringent","light,dry",cooling,"autumn,winter",64,13.99,0.27,0.60,"Cooked apples are Vata-pacifying. Raw apples can be gassy.",E004
+f_167,"Apricot, dried","Khumani|Jardaloo","Vata,Pitta","sweet,sour","heavy,unctuous",heating,winter,316,72.63,3.17,0.74,"Nourishing but heavy. Good for Vata.",E005
+f_168,"Apricot, processed","Apricot","Vata,Pitta","sweet,sour","heavy,unctuous",heating,all,56,10.93,1.47,0.64,"Lighter than dried.",E006
+f_169,"Avocado fruit","Butter Fruit|Makhan Phal","Vata,Pitta",sweet,"heavy,unctuous",cooling,all,144,1.75,2.95,13.86,"Very nourishing for Vata. Increases Kapha.",E007
+f_170,"Bael fruit","Bilva|Maredu Pandu","Vata,Kapha","astringent,bitter","light,dry",heating,summer,136,28.21,2.63,0.57,"Astringent. Good for digestion and balancing Kapha/Vata.",E008
+f_171,"Banana, ripe, montham","Banana","Vata,Pitta",sweet,"heavy,unctuous",cooling,all,111,24.95,1.25,0.32,"Heavy and sweet, increases Kapha. Good for Vata and Pitta.",E009
+f_172,"Banana, ripe, poovam","Banana","Vata,Pitta",sweet,"heavy,unctuous",cooling,all,106,23.41,1.49,0.35,"Heavy and sweet, increases Kapha. Good for Vata and Pitta.",E010
+f_173,"Banana, ripe, red","Red Banana","Vata,Pitta",sweet,"heavy,unctuous",cooling,all,112,25.21,1.29,0.29,"Heavy and sweet, increases Kapha. Good for Vata and Pitta.",E011
+f_174,"Banana, ripe, robusta","Kela|Vazha Pazham|Arati Pandu","Vata,Pitta",sweet,"heavy,unctuous",cooling,all,105,23.63,1.23,0.33,"Heavy and sweet, increases Kapha. Good for Vata and Pitta.",E012
+f_175,"Black berry","Jamun|Neredupandu|Nagapazham","Pitta,Kapha","astringent,sweet,sour","light,dry",cooling,summer,54,10.64,0.92,0.63,"Excellent for Pitta and Kapha. Astringent. Increases Vata.",E013
+f_176,"Cherries, red","Cherry","Vata,Pitta","sweet,sour","light,unctuous",heating,summer,60,11.87,1.49,0.46,"Good for Vata. Sourness can increase Pitta.",E014
+f_177,"Currants, black","Black Currant","Vata,Pitta","sweet,sour","heavy,unctuous",heating,winter,54,9.93,1.51,0.53,"Warming and nourishing.",E015
+f_178,"Custard apple","Sitaphal|Seethapazham","Pitta,Vata",sweet,"heavy,unctuous",cooling,autumn,99,20.38,1.62,0.67,"Very cooling and nourishing. Increases Kapha.",E016
+f_179,"Dates, dry, pale brown","Chuhara|Khajoor|Endu Khajoora","Vata,Pitta",sweet,"heavy,unctuous",heating,winter,320,74.91,2.45,0.35,"Very nourishing and strengthening. Good for Vata.",E017
+f_180,"Dates, dry, dark brown","Khajoor|Pericham Pazham","Vata,Pitta",sweet,"heavy,unctuous",heating,winter,311,72.67,2.38,0.35,"Very nourishing and strengthening. Good for Vata.",E018
+f_181,"Dates, processed","Khajoor|Pericham Pazham","Vata,Pitta",sweet,"heavy,unctuous",heating,winter,286,67.95,1.18,0.41,"Very nourishing and strengthening. Good for Vata.",E019
+f_182,"Fig","Anjeer|Athipazham","Vata,Pitta",sweet,"heavy,unctuous",cooling,summer,81,16.28,2.03,0.37,"Nourishing and cooling. Good for Pitta.",E020
+f_183,"Gooseberry","Amla|Nellikka|Usirikaya","Vata,Pitta,Kapha,Balancing","sour,sweet,bitter,astringent,pungent","light,dry",cooling,autumn,24,4.39,0.34,0.16,"Tridoshic. Excellent rejuvenator. Very high in Vitamin C.",E021
+f_184,"Grapes, seeded, round, black","Angoor|Draksha","Pitta,Vata",sweet,"heavy,unctuous",cooling,summer,61,13.23,0.76,0.32,"Cooling and sweet. Good for Pitta.",E022
+f_185,"Grapes, seeded, round, green","Angoor|Draksha","Pitta,Vata",sweet,"heavy,unctuous",cooling,summer,56,12.19,0.77,0.29,"Cooling and sweet. Good for Pitta.",E023
+f_186,"Grapes, seeded, round, red","Angoor|Draksha","Pitta,Vata",sweet,"heavy,unctuous",cooling,summer,58,12.55,0.95,0.29,"Cooling and sweet. Good for Pitta.",E024
+f_187,"Grapes, seedless, oval, black","Angoor|Draksha","Pitta,Vata",sweet,"heavy,unctuous",cooling,summer,95,20.48,1.41,0.46,"Cooling and sweet. Good for Pitta.",E025
+f_188,"Grapes, seedless, round, green","Angoor|Draksha","Pitta,Vata",sweet,"heavy,unctuous",cooling,summer,54,11.81,0.62,0.26,"Cooling and sweet. Good for Pitta.",E026
+f_189,"Grapes, seedless,. round, black","Angoor|Draksha","Pitta,Vata",sweet,"heavy,unctuous",cooling,summer,89,19.86,1.24,0.35,"Cooling and sweet. Good for Pitta.",E027
+f_190,"Guava, white flesh","Amrud|Koyyapazham|Jama Pandu","Pitta,Kapha","astringent,sweet","light,dry",cooling,winter,32,5.13,1.44,0.32,"Astringent and cooling. Can increase Vata.",E028
+f_191,"Guava, pink flesh","Lal Amrud","Pitta,Kapha","astringent,sweet","light,dry",cooling,winter,47,9.14,1.19,0.25,"Astringent and cooling. Can increase Vata.",E029
+f_192,"Jack fruit, ripe","Kathal|Palapazham|Panasa Pandu","Vata,Pitta",sweet,"heavy,unctuous",cooling,summer,72,14.01,2.74,0.15,"Heavy and hard to digest. Increases Kapha.",E030
+f_193,"Jambu fruit, ripe","Rose Apple|Jamun","Pitta,Kapha","astringent,sweet","light,dry",cooling,summer,56,12.30,0.82,0.17,"Astringent. Good for Pitta and Kapha.",E031
+f_194,"Karonda fruit","Karonda",Pitta,sour,"light,sharp",heating,summer,34,2.87,1.15,1.67,"Very sour and heating. Aggravates Pitta.",E032
+f_195,"Lemon, juice","Nimbu|Elumichai|Nimmakaya","Vata,Kapha,Pitta",sour,"light,sharp",heating,all,36,6.97,0.41,0.75,"Heating, but aids digestion. Good for Vata/Kapha, increases Pitta.",E033
+f_196,"Lime, sweet, pulp","Mosambi|Sathukudi",Pitta,"sweet,sour","heavy,unctuous",cooling,all,27,5.18,0.76,0.20,"Cooling and sweet. Good for Pitta.",E034
+f_197,"Litchi","Litchi","Vata,Pitta",sweet,"heavy,unctuous",cooling,summer,54,11.41,0.99,0.26,"Nourishing, but can be heavy. Increases Kapha.",E035
+f_198,"Mango, ripe, banganapalli","Aam|Mampazham|Mamidi Pandu","Vata,Pitta",sweet,"heavy,unctuous",heating,summer,42,8.18,0.54,0.55,"King of fruits. Nourishing. Increases Kapha.",E036
+f_199,"Mango, ripe, gulabkhas","Aam|Mampazham|Mamidi Pandu","Vata,Pitta",sweet,"heavy,unctuous",heating,summer,50,10.32,0.52,0.53,"King of fruits. Nourishing. Increases Kapha.",E037
+f_200,"Mango, ripe, himsagar","Aam|Mampazham|Mamidi Pandu","Vata,Pitta",sweet,"heavy,unctuous",heating,summer,45,9.03,0.46,0.54,"King of fruits. Nourishing. Increases Kapha.",E038
+f_201,"Mango, ripe, neelam","Aam|Mampazham|Mamidi Pandu","Vata,Pitta",sweet,"heavy,unctuous",heating,summer,48,9.87,0.50,0.51,"King of fruits. Nourishing. Increases Kapha.",E039
+f_202,"Mango, ripe, olour","Aam|Mampazham|Mamidi Pandu","Vata,Pitta",sweet,"heavy,unctuous",heating,summer,46,9.25,0.48,0.52,"King of fruits. Nourishing. Increases Kapha.",E040
+f_203,"Mango, ripe, peter","Aam|Mampazham|Mamidi Pandu","Vata,Pitta",sweet,"heavy,unctuous",heating,summer,47,9.55,0.49,0.53,"King of fruits. Nourishing. Increases Kapha.",E041
+f_204,"Mango, ripe, rumani","Aam|Mampazham|Mamidi Pandu","Vata,Pitta",sweet,"heavy,unctuous",heating,summer,44,8.89,0.45,0.50,"King of fruits. Nourishing. Increases Kapha.",E042
+f_205,"Mango, ripe, malgoa","Aam|Mampazham|Mamidi Pandu","Vata,Pitta",sweet,"heavy,unctuous",heating,summer,49,10.01,0.51,0.56,"King of fruits. Nourishing. Increases Kapha.",E043
+f_206,"Mango, ripe, safeda","Aam|Mampazham|Mamidi Pandu","Vata,Pitta",sweet,"heavy,unctuous",heating,summer,43,8.55,0.44,0.49,"King of fruits. Nourishing. Increases Kapha.",E044
+f_207,"Mango, ripe, totapuri","Aam|Mampazham|Mamidi Pandu","Vata,Pitta",sweet,"heavy,unctuous",heating,summer,41,8.01,0.42,0.48,"King of fruits. Nourishing. Increases Kapha.",E045
+f_208,"Muskmelon, cantaloupe","Kharbuja|Mulampazham","Pitta",sweet,"heavy,unctuous",cooling,summer,23,4.39,0.61,0.20,"Cooling and hydrating.",E046
+f_209,"Orange, pulp","Santra|Naranga","Pitta,Kapha",sweet,"heavy,unctuous",cooling,winter,40,8.21,0.81,0.21,"Can increase Kapha if eaten in excess.",E047
+f_210,"Papaya, ripe","Papita|Pappali|Boppayi Pandu","Pitta,Vata",sweet,"light,unctuous",heating,all,34,6.91,0.58,0.14,"Good for digestion. Can increase Pitta.",E048
+f_211,"Peach","Aadu|Aaru","Pitta,Vata",sweet,"light,unctuous",cooling,summer,46,9.64,0.84,0.26,"Cooling and refreshing.",E049
+f_212,"Pear","Nashpati|Perikkai","Pitta,Vata",sweet,"heavy,dry",cooling,autumn,60,13.13,0.54,0.38,"Can be slightly Vata-aggravating.",E050
+f_213,"Pineapple","Ananas|Annachi Pazham","Pitta,Kapha",sweet,"heavy,unctuous",heating,summer,46,9.78,0.44,0.40,"Sour aftertaste can increase Pitta.",E051
+f_214,"Plum","Aloo Bukhara|Alpakoda","Pitta,Vata",sweet,"light,unctuous",cooling,summer,55,11.88,0.76,0.44,"Cooling and laxative.",E052
+f_215,"Pomegranate","Anar|Madulai|Danimmakaya","Pitta,Vata",sweet,"light,dry",cooling,autumn,65,13.67,1.46,0.15,"Excellent for Pitta. Astringent quality helps bind stool.",E053
+f_216,"Prunes, dried","Sookha Aloo Bukhara","Vata,Pitta",sweet,"heavy,unctuous",heating,winter,290,65.61,2.30,0.69,"Very nourishing and laxative.",E054
+f_217,"Raisins, dried, black","Kishmish|Ular Drakshai","Vata,Pitta",sweet,"heavy,unctuous",cooling,all,308,74.63,2.46,0.54,"Nourishing and cooling.",E055
+f_218,"Raisins, dried, brown","Kishmish|Ular Drakshai","Vata,Pitta",sweet,"heavy,unctuous",cooling,all,306,74.11,2.52,0.52,"Nourishing and cooling.",E056
+f_219,"Sapodilla","Chikoo|Sapota","Vata,Pitta",sweet,"heavy,unctuous",cooling,winter,86,18.53,0.71,1.06,"Very sweet and nourishing. Increases Kapha.",E057
+f_220,"Strawberry","Strawberry","Pitta,Kapha",sweet,"light,unctuous",cooling,spring,36,6.97,0.77,0.41,"Cooling, but can be allergenic for some.",E058
+f_221,"Watermelon","Tarbooz|Darboosani","Pitta",sweet,"light,unctuous",cooling,summer,16,2.97,0.23,0.20,"Extremely cooling and hydrating.",E059
+f_222,"Wood apple","Kaith|Vilampazham","Vata,Kapha","sour,astringent","light,dry",heating,summer,134,28.11,2.71,0.27,"Astringent and good for digestion.",E060
+f_223,"Almond","Badam|Badam Paruppu","Vata,Pitta",sweet,"heavy,unctuous",heating,all,655,6.93,20.80,58.93,"Nourishing and strengthening. Best soaked and peeled.",F001
+f_224,"Cashew nut","Kaju|Mundiri Paruppu","Vata,Pitta",sweet,"heavy,unctuous",heating,all,596,22.47,15.31,46.35,"Heavy and oily. Increases Kapha.",F002
+f_225,"Coconut, dry","Nariyal|Kopra","Vata,Pitta",sweet,"heavy,unctuous",cooling,all,662,13.71,6.88,62.33,"Very nourishing. Increases Kapha.",F003
+f_226,"Coconut, fresh","Nariyal|Thengai","Pitta",sweet,"heavy,unctuous",cooling,all,444,13.00,4.50,41.60,"Cooling and nourishing.",F004
+f_227,"Coconut, milk","Nariyal Doodh|Thengai Paal","Pitta",sweet,"heavy,unctuous",cooling,all,216,3.99,2.01,21.33,"Cooling and nourishing.",F005
+f_228,"Coconut, tender","Nariyal Pani|Elaneer","Pitta",sweet,"light,unctuous",cooling,all,24,5.49,0.20,0.09,"Very cooling and hydrating.",F006
+f_229,"Garden cress seed","Halim","Vata,Kapha",pungent,"unctuous,light",heating,winter,454,33.13,25.34,24.53,"Warming and nourishing.",F007
+f_230,"Gingelly seed","Til|Ellu","Vata",sweet,"heavy,unctuous",heating,winter,563,12.21,18.29,48.70,"Warming and nourishing. Good for Vata.",F008
+f_231,"Groundnut, roasted","Mungphali|Verkadalai","Vata,Kapha",sweet,"heavy,unctuous",heating,winter,570,13.68,23.68,49.66,"Heavy and oily. Can increase Pitta and Kapha.",F009
+f_232,"Groundnut, fresh","Mungphali|Verkadalai","Vata,Kapha",sweet,"heavy,unctuous",heating,winter,564,13.51,23.95,48.94,"Heavy and oily. Can increase Pitta and Kapha.",F010
+f_233,"Linseed","Alsi|Ali Vidai","Vata,Kapha",sweet,"heavy,unctuous",heating,winter,492,34.26,19.53,37.05,"Warming and good source of omega-3.",F011
+f_234,"Mustard seed","Sarson|Kadugu","Kapha,Vata",pungent,"sharp,oily",heating,winter,541,15.76,24.94,43.25,"Very heating. Increases Pitta.",F012
+f_235,"Niger seed","Kala Til|Payellu","Vata,Kapha",sweet,"heavy,unctuous",heating,winter,515,16.09,23.97,39.04,"Warming and nourishing.",F013
+f_236,"Pistachio nut","Pista|Pista Paruppu","Vata,Pitta",sweet,"heavy,unctuous",heating,all,626,11.64,19.81,54.77,"Nourishing but heavy.",F014
+f_237,"Poppy seed","Khus Khus|Kasa Kasa","Vata,Pitta",sweet,"heavy,unctuous",cooling,all,531,12.20,18.07,44.73,"Cooling and calming. Can increase Kapha.",F015
+f_238,"Safflower seed","Kusum|Kusuma Vittulu","Vata,Kapha",sweet,"heavy,unctuous",heating,winter,516,11.74,16.18,43.93,"Warming.",F016
+f_239,"Sunflower seed","Surajmukhi|Suryakanthi","Vata,Pitta",sweet,"heavy,unctuous",heating,all,570,11.54,22.78,49.57,"Nourishing.",F017
+f_240,"Walnut","Akhrot|Akrottu","Vata",sweet,"heavy,unctuous",heating,winter,687,5.49,14.96,68.09,"Brain food. Warming and nourishing for Vata.",F018
+f_241,"Watermelon seed","Tarbuj ke Beej","Pitta,Vata",sweet,"heavy,unctuous",cooling,summer,569,11.93,28.33,47.37,"Cooling and nourishing.",F019
+f_242,"Asafoetida","Hing|Perungayam","Vata,Kapha",pungent,"light,sharp,penetrating",heating,all,375,67.76,9.65,4.53,"Excellent for Vata. Reduces gas. Increases Pitta.",G001
+f_243,"Bay leaf","Tej Patta|Biryani Ilai","Vata,Kapha",pungent,"light,sharp",heating,all,314,48.67,7.61,8.36,"Aromatic and warming.",G002
+f_244,"Cardamom, big","Badi Elaichi|Periya Elakkai","Vata,Kapha",pungent,"dry,sharp",heating,all,311,40.47,10.76,6.70,"Stronger and more heating than green cardamom.",G003
+f_245,"Cardamom, small","Choti Elaichi|Elakkai","Vata,Pitta,Kapha,Balancing",pungent,"light,dry",cooling,all,311,40.47,10.76,6.70,"Tridoshic. Aromatic and digestive.",G004
+f_246,"Cinnamon","Dalchini|Pattai","Vata,Kapha",pungent,"light,sharp",heating,all,309,55.96,3.89,3.21,"Warming and digestive. Increases Pitta.",G005
+f_247,"Clove","Laung|Kirambu","Vata,Kapha",pungent,"light,sharp",cooling,all,313,33.94,5.98,13.02,"Cooling post-digestive effect. Analgesic.",G006
+f_248,"Coriander seed","Dhania|Kothamalli Vidai","Pitta,Vata,Kapha",pungent,"light,unctuous",cooling,all,346,25.06,14.12,16.13,"Tridoshic, but especially good for Pitta. Cooling.",G007
+f_249,"Cumin seed","Jeera|Jeeragam","Vata,Pitta,Kapha",pungent,"light,dry",cooling,all,418,33.73,18.72,24.53,"Excellent digestive. Cooling.",G008
+f_250,"Fenugreek seed","Methi Dana|Vendhayam","Kapha,Vata",bitter,"light,unctuous",heating,winter,374,40.36,26.19,7.13,"Reduces blood sugar. Increases Pitta.",G009
+f_251,"Garlic, dry","Lehsun|Poondu","Vata,Kapha",pungent,"heavy,unctuous,sharp",heating,winter,123,24.33,6.16,0.15,"Very heating. Good for Vata and Kapha. Increases Pitta.",G010
+f_252,"Garlic, fresh","Lehsun|Poondu","Vata,Kapha",pungent,"heavy,unctuous,sharp",heating,winter,111,21.33,6.39,0.10,"Very heating. Good for Vata and Kapha. Increases Pitta.",G011
+f_253,"Ginger, dry","Sonth|Sukku","Vata,Kapha",pungent,"light,dry",heating,winter,347,70.86,8.98,4.24,"More heating and drying than fresh ginger.",G012
+f_254,"Ginger, fresh","Adrak|Inji","Vata,Kapha",pungent,"heavy,unctuous",heating,all,60,12.33,2.30,0.91,"Universal medicine. Digestive and anti-inflammatory.",G013
+f_255,"Mace","Javitri|Jathipathri","Vata,Kapha",pungent,"light,unctuous",heating,all,504,23.01,7.16,37.56,"Aromatic and warming.",G014
+f_256,"Nutmeg","Jaiphal|Jathikkai","Vata,Kapha",pungent,"light,unctuous",heating,all,549,28.49,7.53,40.46,"Calming and sedative in small amounts. Toxic in large doses.",G015
+f_257,"Omum","Ajwain|Omam","Vata,Kapha",pungent,"light,sharp",heating,all,399,38.62,15.89,18.13,"Excellent for digestion and gas. Increases Pitta.",G016
+f_258,"Pepper, black","Kali Mirch|Milagu","Vata,Kapha",pungent,"light,sharp",heating,all,310,49.23,10.95,3.26,"Clears channels. Increases Pitta.",G017
+f_259,"Poppy seed, white","Khus Khus|Kasa Kasa","Vata,Pitta",sweet,"heavy,unctuous",cooling,all,531,12.20,18.07,44.73,"Cooling and calming. Can increase Kapha.",G018
+f_260,"Saffron","Kesar|Kungumapoo","Vata,Pitta,Kapha,Balancing",pungent,"light,unctuous",heating,all,310,61.47,11.43,5.85,"Tridoshic. Rejuvenating and good for skin.",G019
+f_261,"Turmeric, dry","Haldi|Manjal","Vata,Pitta,Kapha,Balancing",bitter,"light,dry",heating,all,354,67.71,9.68,3.25,"Excellent anti-inflammatory. Blood purifier.",G020
+f_262,"Turmeric, fresh","Kachi Haldi|Pasi Manjal","Vata,Pitta,Kapha,Balancing",bitter,"light,dry",heating,all,61,12.66,1.35,0.51,"Excellent anti-inflammatory. Blood purifier.",G021
+f_263,"Beetroot","Chukandar|Beetroot","Pitta,Vata",sweet,"heavy,unctuous",heating,winter,37,6.97,1.77,0.10,"Blood building. Can increase Pitta if eaten in excess.",H001
+f_264,"Carrot","Gajar|Carrot","Vata,Pitta,Kapha",sweet,"heavy,unctuous",heating,winter,38,7.56,0.63,0.47,"Good for eyes. Can increase Kapha.",H002
+f_265,"Colocasia","Arvi|Sepankizhangu","Vata,Pitta",sweet,"heavy,unctuous",cooling,monsoon,98,21.09,1.93,0.11,"Increases Kapha. Must be cooked well.",H003
+f_266,"Onion, big","Pyaz|Vengayam","Vata,Kapha",pungent,"heavy,unctuous",heating,all,43,8.63,1.27,0.08,"Rajasic. Increases Pitta.",H004
+f_267,"Onion, small","Pyaz|Chinna Vengayam","Vata,Kapha",pungent,"heavy,unctuous",heating,all,51,10.56,1.53,0.09,"More pungent and heating than big onions.",H005
+f_268,"Potato","Aloo|Urulaikizhangu","Vata,Kapha",sweet,"heavy,dry",cooling,all,97,22.63,1.62,0.09,"Heavy and can be hard to digest. Increases Kapha.",H006
+f_2269,"Radish, red","Mooli|Mullangi","Kapha,Vata",pungent,"light,sharp",heating,winter,17,2.77,0.71,0.13,"Cleansing. Increases Pitta.",H007
+f_270,"Radish, white","Mooli|Mullangi","Kapha,Vata",pungent,"light,sharp",heating,winter,17,2.77,0.71,0.13,"Cleansing. Increases Pitta.",H008
+f_271,"Sweet potato","Shakarkandi|Sakkaraivalli Kizhangu","Vata,Pitta",sweet,"heavy,unctuous",heating,winter,120,28.16,1.19,0.28,"Nourishing and grounding for Vata.",H009
+f_272,"Tapioca","Simla Aloo|Maravalli Kizhangu","Vata,Kapha",sweet,"heavy,dry",cooling,all,149,36.17,0.73,0.23,"Very heavy and Kapha-aggravating.",H010
+f_273,"Yam, wild","Jimikand|Senai Kizhangu","Vata,Kapha",pungent,"dry,light",heating,winter,101,22.19,2.03,0.13,"Can be irritating to throat if not cooked properly.",H011
+f_274,"Yam, ordinary","Jimikand|Senai Kizhangu","Vata,Kapha",pungent,"dry,light",heating,winter,101,22.19,2.03,0.13,"Can be irritating to throat if not cooked properly.",H012
+f_275,"Cane juice","Ganne ka Ras|Karumbu Juice","Pitta",sweet,"heavy,unctuous",cooling,summer,40,9.98,0.10,0.01,"Very cooling. Increases Kapha.",I001
+f_276,"Jaggery","Gud|Vellam","Vata,Pitta",sweet,"heavy,unctuous",heating,winter,383,95.13,0.40,0.10,"Unrefined sugar. More minerals than white sugar.",I002
+f_277,"Sugar","Cheeni|Sarkkarai","Pitta,Kapha",sweet,"heavy,unctuous",cooling,all,398,99.40,0.10,0.10,"Refined. Increases Kapha.",I003
+f_278,"Honey","Shahad|Then","Vata,Kapha",sweet,"light,dry",heating,all,319,79.50,0.40,0.10,"Scrapes fat. Should not be heated.",J001
+f_279,"Butter","Makhan|Vennai","Vata,Pitta",sweet,"heavy,unctuous",cooling,all,729,0.05,0.49,82.22,"Nourishing. Increases Kapha.",K001
+f_280,"Buttermilk","Chaas|Moru","Vata,Pitta,Kapha,Balancing",astringent,"light,dry",cooling,all,15,0.51,0.84,0.53,"Tridoshic. Excellent digestive.",K002
+f_281,"Cheese","Paneer|Paneer","Vata,Kapha",sour,"heavy,unctuous",heating,all,265,4.53,18.33,20.78,"Heavy and hard to digest. Increases Kapha.",K003
+f_282,"Curd","Dahi|Thayir","Vata,Pitta,Kapha",sour,"heavy,unctuous",heating,all,98,3.38,11.12,4.25,"Sour and heating. Clogs channels. Increases Pitta/Kapha.",K004
+f_283,"Ghee","Ghee|Ney","Vata,Pitta",sweet,"unctuous,light",cooling,all,900,0.00,0.00,100.00,"Best fat. Pacifies Vata and Pitta. Digestive.",K005
+f_284,"Milk, buffalo","Bhains ka Doodh|Erumai Paal","Kapha,Pitta",sweet,"heavy,unctuous",cooling,all,117,5.18,4.30,8.95,"Heavier than cow's milk.",K006
+f_285,"Milk, cow","Gai ka Doodh|Pasum Paal","Vata,Pitta",sweet,"heavy,unctuous",cooling,all,67,4.43,3.15,4.05,"Sattvic and nourishing.",K007
+f_286,"Milk, goat","Bakri ka Doodh|Aattu Paal","Vata,Pitta,Kapha",astringent,"light,dry",cooling,all,76,4.45,4.17,4.53,"Lighter than cow's milk. Good for all doshas.",K008
+f_287,"Crab","Kekda|Nandu","Vata,Pitta",sweet,"heavy,unctuous",heating,all,101,0.00,20.10,1.20,"Increases Pitta and Kapha.",L001
+f_288,"Egg, duck","Batak ka Anda","Vata,Pitta",sweet,"heavy,unctuous",heating,all,185,1.45,12.81,13.77,"Heavier and more heating than chicken egg.",L002
+f_289,"Egg, hen","Murghi ka Anda|Kozhi Muttai","Vata,Pitta",sweet,"heavy,unctuous",heating,all,173,0.68,13.33,12.58,"Heating. Increases Pitta.",L003
+f_290,"Fish, katla","Katla","Vata,Pitta",sweet,"heavy,unctuous",heating,all,111,0.00,19.50,2.40,"Increases Pitta and Kapha.",L004
+f_291,"Fish, mackerel","Bangda","Vata,Pitta",sweet,"heavy,unctuous",heating,all,189,0.00,18.70,11.90,"Oily fish. Increases Pitta and Kapha.",L005
+f_292,"Fish, pomfret, black","Kala Paplet","Vata,Pitta",sweet,"heavy,unctuous",heating,all,122,0.00,19.00,4.00,"Increases Pitta and Kapha.",L006
+f_293,"Fish, pomfret, silver","Safed Paplet","Vata,Pitta",sweet,"heavy,unctuous",heating,all,106,0.00,17.00,4.00,"Increases Pitta and Kapha.",L007
+f_294,"Fish, sardine","Sardine","Vata,Pitta",sweet,"heavy,unctuous",heating,all,163,0.00,20.40,8.70,"Oily fish. Increases Pitta and Kapha.",L008
+f_295,"Fish, seer","Surmai|Vanjaram","Vata,Pitta",sweet,"heavy,unctuous",heating,all,117,0.00,21.00,3.00,"Increases Pitta and Kapha.",L009
+f_296,"Mutton","Bakre ka Gosht|Aattu Kari","Vata,Pitta",sweet,"heavy,unctuous",heating,all,143,0.00,21.40,6.20,"Very heating. Increases Pitta.",L010
+f_297,"Pork","Suar ka Gosht|Panni Kari","Vata,Pitta",sweet,"heavy,unctuous",heating,all,186,0.00,14.70,13.50,"Very heavy and heating.",L011
+f_298,"Prawn","Jhinga|Eral","Vata,Pitta",sweet,"heavy,unctuous",heating,all,89,0.00,19.20,0.70,"Increases Pitta and Kapha.",L012
+f_299,"Beef","Gai ka Gosht|Maattu Kari","Vata,Pitta",sweet,"heavy,unctuous",heating,all,148,0.00,22.60,6.20,"Very heavy and heating.",L013
+f_300,"Chicken","Murghi|Kozhi Kari","Vata,Pitta",sweet,"light,dry",heating,all,165,0.00,31.02,3.57,"Lighter than red meat, but still heating.",L014

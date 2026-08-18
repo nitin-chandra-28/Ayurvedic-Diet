@@ -1,0 +1,18 @@
+{
+  "type":"object",
+  "properties":{
+    "id":{"type":"string"},
+    "name":{"type":"string"},
+    "synonyms":{"type":"array","items":{"type":"string"}},
+    "dosha_tags":{"type":"array","items":{"type":"string"}},
+    "rasa":{"type":"array","items":{"type":"string"}},
+    "guna":{"type":"array","items":{"type":"string"}},
+    "virya":{"type":"string"},
+    "season":{"type":"array","items":{"type":"string"}},
+    "calories_per_100g":{"type":"number"},
+    "macros":{"type":"object","properties":{"carb":{"type":"number"},"protein":{"type":"number"},"fat":{"type":"number"}}},
+    "micronutrients":{"type":"object"},
+    "notes":{"type":"string"}
+  },
+  "required":["id","name","dosha_tags","calories_per_100g","macros"]
+}
