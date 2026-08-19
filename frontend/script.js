@@ -2169,7 +2169,7 @@ async function showQuizResults() {
       throw new Error('Failed to calculate dosha');
     }
 
-    const result = await response.json();
+ const result = await window.AyurAPI.calculatePrakriti(answers);    
     const dosha = result.primary_dosha || result.dosha_result;
     const secondary = result.secondary_dosha;
     const percentages = result.percentages || {};
