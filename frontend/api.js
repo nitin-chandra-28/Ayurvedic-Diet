@@ -1,6 +1,5 @@
 // Simple frontend API client
-const API_BASE = localStorage.getItem('apiBase') || 'https://ayurvedic-diet.onrender.com';
-
+const API_BASE = import.meta.env.VITE_API_URL || localStorage.getItem('apiBase') || 'http://localhost:3000';
 async function api(path, { method = 'GET', body } = {}) {
   const headers = { 'Content-Type': 'application/json' };
   
@@ -48,8 +47,7 @@ export async function getAdvisory(payload) { return api('/api/advisory/generate'
 export async function getQuickTip(dosha) { return api('/api/advisory/quick?dosha=' + (dosha || 'Vata')); }
 export async function getMedicineAlternative(medicine) { 
   // Call the AI API server directly for medicine alternatives
-  const AI_API_BASE = 'https://ayurvedic-diet-1.onrender.com';
-  const response = await fetch(AI_API_BASE + '/medicine-alternative', {
+const AI_API_BASE = import.meta.env.VITE_AI_API_URL || localStorage.getItem('aiApiBase') || 'http://localhost:3001';  const response = await fetch(AI_API_BASE + '/medicine-alternative', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ medicine })
@@ -60,3 +58,6 @@ export async function getMedicineAlternative(medicine) {
 
 window.AyurAPI = { health, register, login, listFoods, generatePlan, listPlans, getAdvisory, getQuickTip, getMedicineAlternative };
 
+export async function calculatePrakriti(answers) { 
+  return api('/quiz/prakriti', { method: 'POST', body: { answers } }); 
+}
