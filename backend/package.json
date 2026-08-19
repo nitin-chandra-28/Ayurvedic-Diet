@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js",
-    "test": "node src/tests/ruleEngine.test.js",
-    "seed": "node scripts/seedDatabase.js"
+    "build": "npm run seed || echo 'Seed skipped or already done'",
+  "start": "node src/server.js",
+  "dev": "nodemon src/server.js",
+  "test": "node src/tests/ruleEngine.test.js",
+  "seed": "node scripts/seedDatabase.js"
   },
   "keywords": [],
   "author": "",
