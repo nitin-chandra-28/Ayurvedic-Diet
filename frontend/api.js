@@ -56,8 +56,7 @@ const AI_API_BASE = import.meta.env.VITE_AI_API_URL || localStorage.getItem('aiA
   return response.json();
 }
 
-window.AyurAPI = { health, register, login, listFoods, generatePlan, listPlans, getAdvisory, getQuickTip, getMedicineAlternative };
-
 export async function calculatePrakriti(answers) { 
   return api('/quiz/prakriti', { method: 'POST', body: { answers } }); 
 }
+window.AyurAPI = { health, register, login, listFoods, generatePlan, listPlans, getAdvisory, getQuickTip, getMedicineAlternative, calculatePrakriti };
