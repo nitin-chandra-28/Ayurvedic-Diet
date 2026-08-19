@@ -2159,7 +2159,7 @@ async function showQuizResults() {
     }));
 
     // Call backend API
-    const response = await fetch('http://localhost:3000/quiz/prakriti', {
+    const response = await fetch('https://ayurvedic-diet.onrender.com/quiz/prakriti', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ answers })
