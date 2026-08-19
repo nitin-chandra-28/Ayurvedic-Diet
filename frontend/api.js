@@ -48,7 +48,7 @@ export async function getAdvisory(payload) { return api('/api/advisory/generate'
 export async function getQuickTip(dosha) { return api('/api/advisory/quick?dosha=' + (dosha || 'Vata')); }
 export async function getMedicineAlternative(medicine) { 
   // Call the AI API server directly for medicine alternatives
-  const AI_API_BASE = 'http://localhost:3001';
+  const AI_API_BASE = 'https://ayurvedic-diet-1.onrender.com';
   const response = await fetch(AI_API_BASE + '/medicine-alternative', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
