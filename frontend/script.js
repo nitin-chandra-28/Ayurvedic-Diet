@@ -629,8 +629,7 @@ function generateProfessionalPDF(plan, profile) {
       // Macros
       doc.setFontSize(8);
       doc.setTextColor(120, 120, 120);
-      const macroText = `${Math.round(item.macros?.calories || 0)} kcal | C:${Math.round(item.macros?.carbs || 0)}g P:${Math.round(item.macros?.protein || 0)}g F:${Math.round(item.macros?.fat || 0)}g`;
-      doc.text(macroText, pageWidth - margin - 3, yPos + 2, { align: 'right' });
+const macroText = ${Math.round(item.macros?.calories || 0)} kcal | C:${Math.round(item.macros?.carbs || 0)}g P:${Math.round(item.macros?.protein || 0)}g F:${Math.round(item.macros?.fat || 0)}g;      doc.text(macroText, pageWidth - margin - 3, yPos + 2, { align: 'right' });
 
       // Why info (benefit)
       if (item.why) {
