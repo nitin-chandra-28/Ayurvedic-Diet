@@ -1,5 +1,5 @@
 // Simple frontend API client
-const API_BASE = localStorage.getItem('apiBase') || 'http://localhost:3000';
+const API_BASE = localStorage.getItem('apiBase') || 'https://ayurvedic-diet.onrender.com';
 
 async function api(path, { method = 'GET', body } = {}) {
   const headers = { 'Content-Type': 'application/json' };
