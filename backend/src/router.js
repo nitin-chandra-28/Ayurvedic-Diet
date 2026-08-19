@@ -59,7 +59,7 @@ export async function route(req, res) {
 
       try {
         const axios = await import('axios');
-        const response = await axios.default.post('http://localhost:3001/chat', { message });
+        const response = await axios.default.post('https://ayurvedic-diet-1.onrender.com', { message });
         return json(res, 200, { reply: response.data.reply });
       } catch (error) {
         console.error('InferFlow API error:', error.message);
