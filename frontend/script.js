@@ -3226,8 +3226,7 @@ setTimeout(async () => {
 // ============================================
 
 // Configurable AI API base (override via localStorage 'aiApiBase')
-const AI_API_BASE = (typeof localStorage !== 'undefined' && localStorage.getItem('aiApiBase')) || 'http://localhost:3001';
-
+const AI_API_BASE = import.meta.env.VITE_AI_API_URL || localStorage.getItem('aiApiBase') || 'http://localhost:3001';
 // Initialize chat functionality after DOM is ready
 function initializeChat() {
   const chatModal = document.getElementById('chatModal');
