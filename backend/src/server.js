@@ -10,8 +10,7 @@ const server = http.createServer(async (req, res) => {
   return route(req, res);
 });
 
-const PORT = process.env.PORT || 8080;
-
+const PORT = process.env.PORT || 3000;
 // Connect to MongoDB once at startup
 connectDB()
   .then(() => {
