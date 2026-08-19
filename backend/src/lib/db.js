@@ -9,7 +9,7 @@ export async function connectDB() {
   await client.connect();
   db = client.db();
   // Create indexes once
-  await db.collection('users').createIndex({ email: 1 }, { unique: true });
+  await db.collection('users').createIndex({ email: 1 }, { unique: true , sparse: true});
   await db.collection('foods').createIndex({ name: 'text', 'tags.dosha': 1, season: 1 });
   await db.collection('diet_plans').createIndex({ user_id: 1, date_generated: -1 });
   return db;
